@@ -1,0 +1,1642 @@
+# Example Codex agent registry for this repository
+# This file is intentionally local/example-only and not installed globally.
+
+[agents.architecture_orchestration_api_architect]
+config_file = "agents/architecture-orchestration/api-architect.toml"
+description = "Use for api architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_architect_review_wshobson]
+config_file = "agents/architecture-orchestration/architect-review-wshobson.toml"
+description = "Use for architect review tasks in architecture orchestration."
+
+[agents.architecture_orchestration_architect_review]
+config_file = "agents/architecture-orchestration/architect-review.toml"
+description = "Use for architect review tasks in architecture orchestration."
+
+[agents.architecture_orchestration_backend_architect_wshobson]
+config_file = "agents/architecture-orchestration/backend-architect-wshobson.toml"
+description = "Use for backend architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_backend_architect]
+config_file = "agents/architecture-orchestration/backend-architect.toml"
+description = "Use for backend architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_backend_typescript_architect]
+config_file = "agents/architecture-orchestration/backend-typescript-architect.toml"
+description = "Use for backend typescript architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_c4_code]
+config_file = "agents/architecture-orchestration/c4-code.toml"
+description = "Use for c4 code tasks in architecture orchestration."
+
+[agents.architecture_orchestration_c4_component]
+config_file = "agents/architecture-orchestration/c4-component.toml"
+description = "Use for c4 component tasks in architecture orchestration."
+
+[agents.architecture_orchestration_c4_container]
+config_file = "agents/architecture-orchestration/c4-container.toml"
+description = "Use for c4 container tasks in architecture orchestration."
+
+[agents.architecture_orchestration_c4_context]
+config_file = "agents/architecture-orchestration/c4-context.toml"
+description = "Use for c4 context tasks in architecture orchestration."
+
+[agents.architecture_orchestration_cloud_architect_wshobson]
+config_file = "agents/architecture-orchestration/cloud-architect-wshobson.toml"
+description = "Use for cloud architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_cloud_architect]
+config_file = "agents/architecture-orchestration/cloud-architect.toml"
+description = "Use for cloud architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_conductor_validator]
+config_file = "agents/architecture-orchestration/conductor-validator.toml"
+description = "Use for conductor validator tasks in architecture orchestration."
+
+[agents.architecture_orchestration_context_manager_wshobson]
+config_file = "agents/architecture-orchestration/context-manager-wshobson.toml"
+description = "Use for context manager tasks in architecture orchestration."
+
+[agents.architecture_orchestration_context_manager]
+config_file = "agents/architecture-orchestration/context-manager.toml"
+description = "Use for context manager tasks in architecture orchestration."
+
+[agents.architecture_orchestration_database_architect]
+config_file = "agents/architecture-orchestration/database-architect.toml"
+description = "Use for database architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_design_system_architect]
+config_file = "agents/architecture-orchestration/design-system-architect.toml"
+description = "Use for design system architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_docs_architect]
+config_file = "agents/architecture-orchestration/docs-architect.toml"
+description = "Use for docs architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_dotnet_architect]
+config_file = "agents/architecture-orchestration/dotnet-architect.toml"
+description = "Use for dotnet architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_episode_orchestrator]
+config_file = "agents/architecture-orchestration/episode-orchestrator.toml"
+description = "Use for episode orchestrator tasks in architecture orchestration."
+
+[agents.architecture_orchestration_event_sourcing_architect]
+config_file = "agents/architecture-orchestration/event-sourcing-architect.toml"
+description = "Use for event sourcing architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_graphql_architect_wshobson]
+config_file = "agents/architecture-orchestration/graphql-architect-wshobson.toml"
+description = "Use for graphql architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_graphql_architect]
+config_file = "agents/architecture-orchestration/graphql-architect.toml"
+description = "Use for graphql architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_hybrid_cloud_architect]
+config_file = "agents/architecture-orchestration/hybrid-cloud-architect.toml"
+description = "Use for hybrid cloud architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_kubernetes_architect]
+config_file = "agents/architecture-orchestration/kubernetes-architect.toml"
+description = "Use for kubernetes architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_mcp_deployment_orchestrator]
+config_file = "agents/architecture-orchestration/mcp-deployment-orchestrator.toml"
+description = "Use for mcp deployment orchestrator tasks in architecture orchestration."
+
+[agents.architecture_orchestration_mcp_server_architect]
+config_file = "agents/architecture-orchestration/mcp-server-architect.toml"
+description = "Use for mcp server architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_monorepo_architect]
+config_file = "agents/architecture-orchestration/monorepo-architect.toml"
+description = "Use for monorepo architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_project_supervisor_orchestrator]
+config_file = "agents/architecture-orchestration/project-supervisor-orchestrator.toml"
+description = "Use for project supervisor orchestrator tasks in architecture orchestration."
+
+[agents.architecture_orchestration_react_component_architect]
+config_file = "agents/architecture-orchestration/react-component-architect.toml"
+description = "Use for react component architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_research_orchestrator]
+config_file = "agents/architecture-orchestration/research-orchestrator.toml"
+description = "Use for research orchestrator tasks in architecture orchestration."
+
+[agents.architecture_orchestration_seo_structure_architect]
+config_file = "agents/architecture-orchestration/seo-structure-architect.toml"
+description = "Use for seo structure architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_tdd_orchestrator]
+config_file = "agents/architecture-orchestration/tdd-orchestrator.toml"
+description = "Use for tdd orchestrator tasks in architecture orchestration."
+
+[agents.architecture_orchestration_team_configurator]
+config_file = "agents/architecture-orchestration/team-configurator.toml"
+description = "Use for team configurator tasks in architecture orchestration."
+
+[agents.architecture_orchestration_team_debugger]
+config_file = "agents/architecture-orchestration/team-debugger.toml"
+description = "Use for team debugger tasks in architecture orchestration."
+
+[agents.architecture_orchestration_team_implementer]
+config_file = "agents/architecture-orchestration/team-implementer.toml"
+description = "Use for team implementer tasks in architecture orchestration."
+
+[agents.architecture_orchestration_team_lead]
+config_file = "agents/architecture-orchestration/team-lead.toml"
+description = "Use for team lead tasks in architecture orchestration."
+
+[agents.architecture_orchestration_team_reviewer]
+config_file = "agents/architecture-orchestration/team-reviewer.toml"
+description = "Use for team reviewer tasks in architecture orchestration."
+
+[agents.architecture_orchestration_tech_lead_orchestrator]
+config_file = "agents/architecture-orchestration/tech-lead-orchestrator.toml"
+description = "Use for tech lead orchestrator tasks in architecture orchestration."
+
+[agents.architecture_orchestration_url_context_validator]
+config_file = "agents/architecture-orchestration/url-context-validator.toml"
+description = "Use for url context validator tasks in architecture orchestration."
+
+[agents.architecture_orchestration_vue_component_architect]
+config_file = "agents/architecture-orchestration/vue-component-architect.toml"
+description = "Use for vue component architect tasks in architecture orchestration."
+
+[agents.backend_api_api_documenter_wshobson]
+config_file = "agents/backend-api/api-documenter-wshobson.toml"
+description = "Use for api documenter tasks in backend api."
+
+[agents.backend_api_api_documenter]
+config_file = "agents/backend-api/api-documenter.toml"
+description = "Use for api documenter tasks in backend api."
+
+[agents.backend_api_api_security_audit]
+config_file = "agents/backend-api/api-security-audit.toml"
+description = "Use for api security audit tasks in backend api."
+
+[agents.backend_api_backend_developer]
+config_file = "agents/backend-api/backend-developer.toml"
+description = "Use for backend developer tasks in backend api."
+
+[agents.backend_api_backend_security_coder]
+config_file = "agents/backend-api/backend-security-coder.toml"
+description = "Use for backend security coder tasks in backend api."
+
+[agents.backend_api_django_api_developer]
+config_file = "agents/backend-api/django-api-developer.toml"
+description = "Use for django api developer tasks in backend api."
+
+[agents.backend_api_django_backend_expert]
+config_file = "agents/backend-api/django-backend-expert.toml"
+description = "Use for django backend expert tasks in backend api."
+
+[agents.backend_api_django_expert_vijaythecoder]
+config_file = "agents/backend-api/django-expert-vijaythecoder.toml"
+description = "Use for django expert tasks in backend api."
+
+[agents.backend_api_django_expert]
+config_file = "agents/backend-api/django-expert.toml"
+description = "Use for django expert tasks in backend api."
+
+[agents.backend_api_django_orm_expert]
+config_file = "agents/backend-api/django-orm-expert.toml"
+description = "Use for django orm expert tasks in backend api."
+
+[agents.backend_api_django_pro]
+config_file = "agents/backend-api/django-pro.toml"
+description = "Use for django pro tasks in backend api."
+
+[agents.backend_api_express_expert]
+config_file = "agents/backend-api/express-expert.toml"
+description = "Use for express expert tasks in backend api."
+
+[agents.backend_api_fastapi_expert_vijaythecoder]
+config_file = "agents/backend-api/fastapi-expert-vijaythecoder.toml"
+description = "Use for fastapi expert tasks in backend api."
+
+[agents.backend_api_fastapi_expert]
+config_file = "agents/backend-api/fastapi-expert.toml"
+description = "Use for fastapi expert tasks in backend api."
+
+[agents.backend_api_fastapi_pro]
+config_file = "agents/backend-api/fastapi-pro.toml"
+description = "Use for fastapi pro tasks in backend api."
+
+[agents.backend_api_flask_expert]
+config_file = "agents/backend-api/flask-expert.toml"
+description = "Use for flask expert tasks in backend api."
+
+[agents.backend_api_graphql_expert]
+config_file = "agents/backend-api/graphql-expert.toml"
+description = "Use for graphql expert tasks in backend api."
+
+[agents.backend_api_laravel_backend_expert]
+config_file = "agents/backend-api/laravel-backend-expert.toml"
+description = "Use for laravel backend expert tasks in backend api."
+
+[agents.backend_api_laravel_eloquent_expert]
+config_file = "agents/backend-api/laravel-eloquent-expert.toml"
+description = "Use for laravel eloquent expert tasks in backend api."
+
+[agents.backend_api_laravel_expert]
+config_file = "agents/backend-api/laravel-expert.toml"
+description = "Use for laravel expert tasks in backend api."
+
+[agents.backend_api_nestjs_expert]
+config_file = "agents/backend-api/nestjs-expert.toml"
+description = "Use for nestjs expert tasks in backend api."
+
+[agents.backend_api_nodejs_expert]
+config_file = "agents/backend-api/nodejs-expert.toml"
+description = "Use for nodejs expert tasks in backend api."
+
+[agents.backend_api_openai_api_expert]
+config_file = "agents/backend-api/openai-api-expert.toml"
+description = "Use for openai api expert tasks in backend api."
+
+[agents.backend_api_performance_engineer_wshobson]
+config_file = "agents/backend-api/performance-engineer-wshobson.toml"
+description = "Use for performance engineer tasks in backend api."
+
+[agents.backend_api_python_backend_engineer]
+config_file = "agents/backend-api/python-backend-engineer.toml"
+description = "Use for python backend engineer tasks in backend api."
+
+[agents.backend_api_rails_activerecord_expert]
+config_file = "agents/backend-api/rails-activerecord-expert.toml"
+description = "Use for rails activerecord expert tasks in backend api."
+
+[agents.backend_api_rails_api_developer]
+config_file = "agents/backend-api/rails-api-developer.toml"
+description = "Use for rails api developer tasks in backend api."
+
+[agents.backend_api_rails_backend_expert]
+config_file = "agents/backend-api/rails-backend-expert.toml"
+description = "Use for rails backend expert tasks in backend api."
+
+[agents.backend_api_rails_expert_davepoon]
+config_file = "agents/backend-api/rails-expert-davepoon.toml"
+description = "Use for rails expert tasks in backend api."
+
+[agents.backend_api_rails_expert]
+config_file = "agents/backend-api/rails-expert.toml"
+description = "Use for rails expert tasks in backend api."
+
+[agents.backend_api_security_auditor_wshobson]
+config_file = "agents/backend-api/security-auditor-wshobson.toml"
+description = "Use for security auditor tasks in backend api."
+
+[agents.backend_api_temporal_python_pro]
+config_file = "agents/backend-api/temporal-python-pro.toml"
+description = "Use for temporal python pro tasks in backend api."
+
+[agents.backend_api_test_automator_wshobson]
+config_file = "agents/backend-api/test-automator-wshobson.toml"
+description = "Use for test automator tasks in backend api."
+
+[agents.blockchain_web3_arbitrage_bot]
+config_file = "agents/blockchain-web3/arbitrage-bot.toml"
+description = "Use for arbitrage bot tasks in blockchain web3."
+
+[agents.blockchain_web3_blockchain_developer_wshobson]
+config_file = "agents/blockchain-web3/blockchain-developer-wshobson.toml"
+description = "Use for blockchain developer tasks in blockchain web3."
+
+[agents.blockchain_web3_blockchain_developer]
+config_file = "agents/blockchain-web3/blockchain-developer.toml"
+description = "Use for blockchain developer tasks in blockchain web3."
+
+[agents.blockchain_web3_crypto_analyst]
+config_file = "agents/blockchain-web3/crypto-analyst.toml"
+description = "Use for crypto analyst tasks in blockchain web3."
+
+[agents.blockchain_web3_crypto_trader]
+config_file = "agents/blockchain-web3/crypto-trader.toml"
+description = "Use for crypto trader tasks in blockchain web3."
+
+[agents.blockchain_web3_defi_strategist]
+config_file = "agents/blockchain-web3/defi-strategist.toml"
+description = "Use for defi strategist tasks in blockchain web3."
+
+[agents.blockchain_web3_hyperledger_fabric_developer]
+config_file = "agents/blockchain-web3/hyperledger-fabric-developer.toml"
+description = "Use for hyperledger fabric developer tasks in blockchain web3."
+
+[agents.data_ai_ml_academic_research_synthesizer]
+config_file = "agents/data-ai-ml/academic-research-synthesizer.toml"
+description = "Use for academic research synthesizer tasks in data ai ml."
+
+[agents.data_ai_ml_ai_engineer_wshobson]
+config_file = "agents/data-ai-ml/ai-engineer-wshobson.toml"
+description = "Use for ai engineer tasks in data ai ml."
+
+[agents.data_ai_ml_ai_engineer]
+config_file = "agents/data-ai-ml/ai-engineer.toml"
+description = "Use for ai engineer tasks in data ai ml."
+
+[agents.data_ai_ml_business_analyst_wshobson]
+config_file = "agents/data-ai-ml/business-analyst-wshobson.toml"
+description = "Use for business analyst tasks in data ai ml."
+
+[agents.data_ai_ml_data_analyst]
+config_file = "agents/data-ai-ml/data-analyst.toml"
+description = "Use for data analyst tasks in data ai ml."
+
+[agents.data_ai_ml_data_engineer_wshobson]
+config_file = "agents/data-ai-ml/data-engineer-wshobson.toml"
+description = "Use for data engineer tasks in data ai ml."
+
+[agents.data_ai_ml_data_engineer]
+config_file = "agents/data-ai-ml/data-engineer.toml"
+description = "Use for data engineer tasks in data ai ml."
+
+[agents.data_ai_ml_data_scientist_wshobson]
+config_file = "agents/data-ai-ml/data-scientist-wshobson.toml"
+description = "Use for data scientist tasks in data ai ml."
+
+[agents.data_ai_ml_data_scientist]
+config_file = "agents/data-ai-ml/data-scientist.toml"
+description = "Use for data scientist tasks in data ai ml."
+
+[agents.data_ai_ml_hackathon_ai_strategist]
+config_file = "agents/data-ai-ml/hackathon-ai-strategist.toml"
+description = "Use for hackathon ai strategist tasks in data ai ml."
+
+[agents.data_ai_ml_langchain_expert]
+config_file = "agents/data-ai-ml/langchain-expert.toml"
+description = "Use for langchain expert tasks in data ai ml."
+
+[agents.data_ai_ml_market_research_analyst]
+config_file = "agents/data-ai-ml/market-research-analyst.toml"
+description = "Use for market research analyst tasks in data ai ml."
+
+[agents.data_ai_ml_ml_data_expert]
+config_file = "agents/data-ai-ml/ml-data-expert.toml"
+description = "Use for ml data expert tasks in data ai ml."
+
+[agents.data_ai_ml_ml_engineer_wshobson]
+config_file = "agents/data-ai-ml/ml-engineer-wshobson.toml"
+description = "Use for ml engineer tasks in data ai ml."
+
+[agents.data_ai_ml_ml_engineer]
+config_file = "agents/data-ai-ml/ml-engineer.toml"
+description = "Use for ml engineer tasks in data ai ml."
+
+[agents.data_ai_ml_mlops_engineer_wshobson]
+config_file = "agents/data-ai-ml/mlops-engineer-wshobson.toml"
+description = "Use for mlops engineer tasks in data ai ml."
+
+[agents.data_ai_ml_mlops_engineer]
+config_file = "agents/data-ai-ml/mlops-engineer.toml"
+description = "Use for mlops engineer tasks in data ai ml."
+
+[agents.data_ai_ml_numpy_expert]
+config_file = "agents/data-ai-ml/numpy-expert.toml"
+description = "Use for numpy expert tasks in data ai ml."
+
+[agents.data_ai_ml_prompt_engineer_wshobson]
+config_file = "agents/data-ai-ml/prompt-engineer-wshobson.toml"
+description = "Use for prompt engineer tasks in data ai ml."
+
+[agents.data_ai_ml_prompt_engineer]
+config_file = "agents/data-ai-ml/prompt-engineer.toml"
+description = "Use for prompt engineer tasks in data ai ml."
+
+[agents.data_ai_ml_research_brief_generator]
+config_file = "agents/data-ai-ml/research-brief-generator.toml"
+description = "Use for research brief generator tasks in data ai ml."
+
+[agents.data_ai_ml_research_coordinator]
+config_file = "agents/data-ai-ml/research-coordinator.toml"
+description = "Use for research coordinator tasks in data ai ml."
+
+[agents.data_ai_ml_research_synthesizer]
+config_file = "agents/data-ai-ml/research-synthesizer.toml"
+description = "Use for research synthesizer tasks in data ai ml."
+
+[agents.data_ai_ml_twitter_ai_influencer_manager]
+config_file = "agents/data-ai-ml/twitter-ai-influencer-manager.toml"
+description = "Use for twitter ai influencer manager tasks in data ai ml."
+
+[agents.databases_storage_cassandra_expert]
+config_file = "agents/databases-storage/cassandra-expert.toml"
+description = "Use for cassandra expert tasks in databases storage."
+
+[agents.databases_storage_cockroachdb_expert]
+config_file = "agents/databases-storage/cockroachdb-expert.toml"
+description = "Use for cockroachdb expert tasks in databases storage."
+
+[agents.databases_storage_database_admin_wshobson]
+config_file = "agents/databases-storage/database-admin-wshobson.toml"
+description = "Use for database admin tasks in databases storage."
+
+[agents.databases_storage_database_admin]
+config_file = "agents/databases-storage/database-admin.toml"
+description = "Use for database admin tasks in databases storage."
+
+[agents.databases_storage_database_optimization]
+config_file = "agents/databases-storage/database-optimization.toml"
+description = "Use for database optimization tasks in databases storage."
+
+[agents.databases_storage_database_optimizer_wshobson]
+config_file = "agents/databases-storage/database-optimizer-wshobson.toml"
+description = "Use for database optimizer tasks in databases storage."
+
+[agents.databases_storage_database_optimizer]
+config_file = "agents/databases-storage/database-optimizer.toml"
+description = "Use for database optimizer tasks in databases storage."
+
+[agents.databases_storage_dynamodb_expert]
+config_file = "agents/databases-storage/dynamodb-expert.toml"
+description = "Use for dynamodb expert tasks in databases storage."
+
+[agents.databases_storage_mariadb_expert]
+config_file = "agents/databases-storage/mariadb-expert.toml"
+description = "Use for mariadb expert tasks in databases storage."
+
+[agents.databases_storage_mongodb_expert]
+config_file = "agents/databases-storage/mongodb-expert.toml"
+description = "Use for mongodb expert tasks in databases storage."
+
+[agents.databases_storage_mongoose_expert]
+config_file = "agents/databases-storage/mongoose-expert.toml"
+description = "Use for mongoose expert tasks in databases storage."
+
+[agents.databases_storage_mssql_expert]
+config_file = "agents/databases-storage/mssql-expert.toml"
+description = "Use for mssql expert tasks in databases storage."
+
+[agents.databases_storage_mysql_expert]
+config_file = "agents/databases-storage/mysql-expert.toml"
+description = "Use for mysql expert tasks in databases storage."
+
+[agents.databases_storage_neo4j_expert]
+config_file = "agents/databases-storage/neo4j-expert.toml"
+description = "Use for neo4j expert tasks in databases storage."
+
+[agents.databases_storage_redis_expert]
+config_file = "agents/databases-storage/redis-expert.toml"
+description = "Use for redis expert tasks in databases storage."
+
+[agents.databases_storage_sql_expert_davepoon]
+config_file = "agents/databases-storage/sql-expert-davepoon.toml"
+description = "Use for sql expert tasks in databases storage."
+
+[agents.databases_storage_sql_expert]
+config_file = "agents/databases-storage/sql-expert.toml"
+description = "Use for sql expert tasks in databases storage."
+
+[agents.databases_storage_vector_database_engineer]
+config_file = "agents/databases-storage/vector-database-engineer.toml"
+description = "Use for vector database engineer tasks in databases storage."
+
+[agents.databases_storage_vector_db_expert]
+config_file = "agents/databases-storage/vector-db-expert.toml"
+description = "Use for vector db expert tasks in databases storage."
+
+[agents.devops_cloud_infra_ansible_expert]
+config_file = "agents/devops-cloud-infra/ansible-expert.toml"
+description = "Use for ansible expert tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_code_reviewer_wshobson]
+config_file = "agents/devops-cloud-infra/code-reviewer-wshobson.toml"
+description = "Use for code reviewer tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_debugger_wshobson]
+config_file = "agents/devops-cloud-infra/debugger-wshobson.toml"
+description = "Use for debugger tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_deployment_engineer_wshobson]
+config_file = "agents/devops-cloud-infra/deployment-engineer-wshobson.toml"
+description = "Use for deployment engineer tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_deployment_engineer]
+config_file = "agents/devops-cloud-infra/deployment-engineer.toml"
+description = "Use for deployment engineer tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_devops_cicd_expert]
+config_file = "agents/devops-cloud-infra/devops-cicd-expert.toml"
+description = "Use for devops cicd expert tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_devops_troubleshooter_wshobson]
+config_file = "agents/devops-cloud-infra/devops-troubleshooter-wshobson.toml"
+description = "Use for devops troubleshooter tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_devops_troubleshooter]
+config_file = "agents/devops-cloud-infra/devops-troubleshooter.toml"
+description = "Use for devops troubleshooter tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_docker_expert]
+config_file = "agents/devops-cloud-infra/docker-expert.toml"
+description = "Use for docker expert tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_elk_expert]
+config_file = "agents/devops-cloud-infra/elk-expert.toml"
+description = "Use for elk expert tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_error_detective_wshobson]
+config_file = "agents/devops-cloud-infra/error-detective-wshobson.toml"
+description = "Use for error detective tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_grafana_expert]
+config_file = "agents/devops-cloud-infra/grafana-expert.toml"
+description = "Use for grafana expert tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_incident_responder_wshobson]
+config_file = "agents/devops-cloud-infra/incident-responder-wshobson.toml"
+description = "Use for incident responder tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_incident_responder]
+config_file = "agents/devops-cloud-infra/incident-responder.toml"
+description = "Use for incident responder tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_jenkins_expert]
+config_file = "agents/devops-cloud-infra/jenkins-expert.toml"
+description = "Use for jenkins expert tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_kubernetes_expert]
+config_file = "agents/devops-cloud-infra/kubernetes-expert.toml"
+description = "Use for kubernetes expert tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_loki_expert]
+config_file = "agents/devops-cloud-infra/loki-expert.toml"
+description = "Use for loki expert tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_network_engineer_wshobson]
+config_file = "agents/devops-cloud-infra/network-engineer-wshobson.toml"
+description = "Use for network engineer tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_network_engineer]
+config_file = "agents/devops-cloud-infra/network-engineer.toml"
+description = "Use for network engineer tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_observability_engineer]
+config_file = "agents/devops-cloud-infra/observability-engineer.toml"
+description = "Use for observability engineer tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_service_mesh_expert]
+config_file = "agents/devops-cloud-infra/service-mesh-expert.toml"
+description = "Use for service mesh expert tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_terraform_expert]
+config_file = "agents/devops-cloud-infra/terraform-expert.toml"
+description = "Use for terraform expert tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_terraform_specialist_wshobson]
+config_file = "agents/devops-cloud-infra/terraform-specialist-wshobson.toml"
+description = "Use for terraform specialist tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_terraform_specialist]
+config_file = "agents/devops-cloud-infra/terraform-specialist.toml"
+description = "Use for terraform specialist tasks in devops cloud infra."
+
+[agents.devops_cloud_infra_test_automator_wshobson]
+config_file = "agents/devops-cloud-infra/test-automator-wshobson.toml"
+description = "Use for test automator tasks in devops cloud infra."
+
+[agents.documentation_content_code_reviewer_wshobson]
+config_file = "agents/documentation-content/code-reviewer-wshobson.toml"
+description = "Use for code reviewer tasks in documentation content."
+
+[agents.documentation_content_content_marketer_wshobson]
+config_file = "agents/documentation-content/content-marketer-wshobson.toml"
+description = "Use for content marketer tasks in documentation content."
+
+[agents.documentation_content_content_marketer]
+config_file = "agents/documentation-content/content-marketer.toml"
+description = "Use for content marketer tasks in documentation content."
+
+[agents.documentation_content_documentation_specialist]
+config_file = "agents/documentation-content/documentation-specialist.toml"
+description = "Use for documentation specialist tasks in documentation content."
+
+[agents.documentation_content_markdown_syntax_formatter]
+config_file = "agents/documentation-content/markdown-syntax-formatter.toml"
+description = "Use for markdown syntax formatter tasks in documentation content."
+
+[agents.documentation_content_mermaid_expert]
+config_file = "agents/documentation-content/mermaid-expert.toml"
+description = "Use for mermaid expert tasks in documentation content."
+
+[agents.documentation_content_podcast_content_analyzer]
+config_file = "agents/documentation-content/podcast-content-analyzer.toml"
+description = "Use for podcast content analyzer tasks in documentation content."
+
+[agents.documentation_content_reference_builder]
+config_file = "agents/documentation-content/reference-builder.toml"
+description = "Use for reference builder tasks in documentation content."
+
+[agents.documentation_content_search_specialist_wshobson]
+config_file = "agents/documentation-content/search-specialist-wshobson.toml"
+description = "Use for search specialist tasks in documentation content."
+
+[agents.documentation_content_seo_content_auditor]
+config_file = "agents/documentation-content/seo-content-auditor.toml"
+description = "Use for seo content auditor tasks in documentation content."
+
+[agents.documentation_content_seo_content_planner]
+config_file = "agents/documentation-content/seo-content-planner.toml"
+description = "Use for seo content planner tasks in documentation content."
+
+[agents.documentation_content_seo_content_refresher]
+config_file = "agents/documentation-content/seo-content-refresher.toml"
+description = "Use for seo content refresher tasks in documentation content."
+
+[agents.documentation_content_seo_content_writer]
+config_file = "agents/documentation-content/seo-content-writer.toml"
+description = "Use for seo content writer tasks in documentation content."
+
+[agents.documentation_content_tutorial_engineer]
+config_file = "agents/documentation-content/tutorial-engineer.toml"
+description = "Use for tutorial engineer tasks in documentation content."
+
+[agents.frontend_ui_accessibility_expert]
+config_file = "agents/frontend-ui/accessibility-expert.toml"
+description = "Use for accessibility expert tasks in frontend ui."
+
+[agents.frontend_ui_accessibility_specialist]
+config_file = "agents/frontend-ui/accessibility-specialist.toml"
+description = "Use for accessibility specialist tasks in frontend ui."
+
+[agents.frontend_ui_angular_expert]
+config_file = "agents/frontend-ui/angular-expert.toml"
+description = "Use for angular expert tasks in frontend ui."
+
+[agents.frontend_ui_astro_expert]
+config_file = "agents/frontend-ui/astro-expert.toml"
+description = "Use for astro expert tasks in frontend ui."
+
+[agents.frontend_ui_css_expert]
+config_file = "agents/frontend-ui/css-expert.toml"
+description = "Use for css expert tasks in frontend ui."
+
+[agents.frontend_ui_frontend_developer_vijaythecoder]
+config_file = "agents/frontend-ui/frontend-developer-vijaythecoder.toml"
+description = "Use for frontend developer tasks in frontend ui."
+
+[agents.frontend_ui_frontend_developer_wshobson]
+config_file = "agents/frontend-ui/frontend-developer-wshobson.toml"
+description = "Use for frontend developer tasks in frontend ui."
+
+[agents.frontend_ui_frontend_developer]
+config_file = "agents/frontend-ui/frontend-developer.toml"
+description = "Use for frontend developer tasks in frontend ui."
+
+[agents.frontend_ui_frontend_security_coder]
+config_file = "agents/frontend-ui/frontend-security-coder.toml"
+description = "Use for frontend security coder tasks in frontend ui."
+
+[agents.frontend_ui_html_expert]
+config_file = "agents/frontend-ui/html-expert.toml"
+description = "Use for html expert tasks in frontend ui."
+
+[agents.frontend_ui_laravel_vue_developer]
+config_file = "agents/frontend-ui/laravel-vue-developer.toml"
+description = "Use for laravel vue developer tasks in frontend ui."
+
+[agents.frontend_ui_mobile_developer_wshobson]
+config_file = "agents/frontend-ui/mobile-developer-wshobson.toml"
+description = "Use for mobile developer tasks in frontend ui."
+
+[agents.frontend_ui_mobile_security_coder]
+config_file = "agents/frontend-ui/mobile-security-coder.toml"
+description = "Use for mobile security coder tasks in frontend ui."
+
+[agents.frontend_ui_nextjs_app_router_developer]
+config_file = "agents/frontend-ui/nextjs-app-router-developer.toml"
+description = "Use for nextjs app router developer tasks in frontend ui."
+
+[agents.frontend_ui_nextjs_expert]
+config_file = "agents/frontend-ui/nextjs-expert.toml"
+description = "Use for nextjs expert tasks in frontend ui."
+
+[agents.frontend_ui_react_expert]
+config_file = "agents/frontend-ui/react-expert.toml"
+description = "Use for react expert tasks in frontend ui."
+
+[agents.frontend_ui_react_native_expert]
+config_file = "agents/frontend-ui/react-native-expert.toml"
+description = "Use for react native expert tasks in frontend ui."
+
+[agents.frontend_ui_react_nextjs_expert]
+config_file = "agents/frontend-ui/react-nextjs-expert.toml"
+description = "Use for react nextjs expert tasks in frontend ui."
+
+[agents.frontend_ui_react_performance_optimization]
+config_file = "agents/frontend-ui/react-performance-optimization.toml"
+description = "Use for react performance optimization tasks in frontend ui."
+
+[agents.frontend_ui_sql_pro]
+config_file = "agents/frontend-ui/sql-pro.toml"
+description = "Use for sql pro tasks in frontend ui."
+
+[agents.frontend_ui_tailwind_css_expert]
+config_file = "agents/frontend-ui/tailwind-css-expert.toml"
+description = "Use for tailwind css expert tasks in frontend ui."
+
+[agents.frontend_ui_ui_designer]
+config_file = "agents/frontend-ui/ui-designer.toml"
+description = "Use for ui designer tasks in frontend ui."
+
+[agents.frontend_ui_ui_engineer]
+config_file = "agents/frontend-ui/ui-engineer.toml"
+description = "Use for ui engineer tasks in frontend ui."
+
+[agents.frontend_ui_ui_ux_designer_wshobson]
+config_file = "agents/frontend-ui/ui-ux-designer-wshobson.toml"
+description = "Use for ui ux designer tasks in frontend ui."
+
+[agents.frontend_ui_ui_ux_designer]
+config_file = "agents/frontend-ui/ui-ux-designer.toml"
+description = "Use for ui ux designer tasks in frontend ui."
+
+[agents.frontend_ui_ui_visual_validator]
+config_file = "agents/frontend-ui/ui-visual-validator.toml"
+description = "Use for ui visual validator tasks in frontend ui."
+
+[agents.frontend_ui_vue_expert]
+config_file = "agents/frontend-ui/vue-expert.toml"
+description = "Use for vue expert tasks in frontend ui."
+
+[agents.frontend_ui_vue_nuxt_expert]
+config_file = "agents/frontend-ui/vue-nuxt-expert.toml"
+description = "Use for vue nuxt expert tasks in frontend ui."
+
+[agents.frontend_ui_vue_state_manager]
+config_file = "agents/frontend-ui/vue-state-manager.toml"
+description = "Use for vue state manager tasks in frontend ui."
+
+[agents.general_academic_researcher]
+config_file = "agents/general/academic-researcher.toml"
+description = "Use for academic researcher tasks in general."
+
+[agents.general_actix_expert]
+config_file = "agents/general/actix-expert.toml"
+description = "Use for actix expert tasks in general."
+
+[agents.general_agent_expert]
+config_file = "agents/general/agent-expert.toml"
+description = "Use for agent expert tasks in general."
+
+[agents.general_angularjs_expert]
+config_file = "agents/general/angularjs-expert.toml"
+description = "Use for angularjs expert tasks in general."
+
+[agents.general_arm_cortex_expert]
+config_file = "agents/general/arm-cortex-expert.toml"
+description = "Use for arm cortex expert tasks in general."
+
+[agents.general_aspnet_core_expert]
+config_file = "agents/general/aspnet-core-expert.toml"
+description = "Use for aspnet core expert tasks in general."
+
+[agents.general_auth0_expert]
+config_file = "agents/general/auth0-expert.toml"
+description = "Use for auth0 expert tasks in general."
+
+[agents.general_ava_expert]
+config_file = "agents/general/ava-expert.toml"
+description = "Use for ava expert tasks in general."
+
+[agents.general_braintree_expert]
+config_file = "agents/general/braintree-expert.toml"
+description = "Use for braintree expert tasks in general."
+
+[agents.general_bullmq_expert]
+config_file = "agents/general/bullmq-expert.toml"
+description = "Use for bullmq expert tasks in general."
+
+[agents.general_celery_expert]
+config_file = "agents/general/celery-expert.toml"
+description = "Use for celery expert tasks in general."
+
+[agents.general_circleci_expert]
+config_file = "agents/general/circleci-expert.toml"
+description = "Use for circleci expert tasks in general."
+
+[agents.general_code_archaeologist]
+config_file = "agents/general/code-archaeologist.toml"
+description = "Use for code archaeologist tasks in general."
+
+[agents.general_code_reviewer_vijaythecoder]
+config_file = "agents/general/code-reviewer-vijaythecoder.toml"
+description = "Use for code reviewer tasks in general."
+
+[agents.general_code_reviewer]
+config_file = "agents/general/code-reviewer.toml"
+description = "Use for code reviewer tasks in general."
+
+[agents.general_command_expert]
+config_file = "agents/general/command-expert.toml"
+description = "Use for command expert tasks in general."
+
+[agents.general_comprehensive_researcher]
+config_file = "agents/general/comprehensive-researcher.toml"
+description = "Use for comprehensive researcher tasks in general."
+
+[agents.general_connection_agent]
+config_file = "agents/general/connection-agent.toml"
+description = "Use for connection agent tasks in general."
+
+[agents.general_debugger_wshobson]
+config_file = "agents/general/debugger-wshobson.toml"
+description = "Use for debugger tasks in general."
+
+[agents.general_debugger]
+config_file = "agents/general/debugger.toml"
+description = "Use for debugger tasks in general."
+
+[agents.general_directus_developer]
+config_file = "agents/general/directus-developer.toml"
+description = "Use for directus developer tasks in general."
+
+[agents.general_docusaurus_expert]
+config_file = "agents/general/docusaurus-expert.toml"
+description = "Use for docusaurus expert tasks in general."
+
+[agents.general_drupal_developer]
+config_file = "agents/general/drupal-developer.toml"
+description = "Use for drupal developer tasks in general."
+
+[agents.general_dx_optimizer_wshobson]
+config_file = "agents/general/dx-optimizer-wshobson.toml"
+description = "Use for dx optimizer tasks in general."
+
+[agents.general_dx_optimizer]
+config_file = "agents/general/dx-optimizer.toml"
+description = "Use for dx optimizer tasks in general."
+
+[agents.general_elasticsearch_expert]
+config_file = "agents/general/elasticsearch-expert.toml"
+description = "Use for elasticsearch expert tasks in general."
+
+[agents.general_electron_expert]
+config_file = "agents/general/electron-expert.toml"
+description = "Use for electron expert tasks in general."
+
+[agents.general_error_detective_wshobson]
+config_file = "agents/general/error-detective-wshobson.toml"
+description = "Use for error detective tasks in general."
+
+[agents.general_error_detective]
+config_file = "agents/general/error-detective.toml"
+description = "Use for error detective tasks in general."
+
+[agents.general_fastify_expert]
+config_file = "agents/general/fastify-expert.toml"
+description = "Use for fastify expert tasks in general."
+
+[agents.general_fiber_expert]
+config_file = "agents/general/fiber-expert.toml"
+description = "Use for fiber expert tasks in general."
+
+[agents.general_firmware_analyst]
+config_file = "agents/general/firmware-analyst.toml"
+description = "Use for firmware analyst tasks in general."
+
+[agents.general_flyway_expert]
+config_file = "agents/general/flyway-expert.toml"
+description = "Use for flyway expert tasks in general."
+
+[agents.general_game_developer]
+config_file = "agents/general/game-developer.toml"
+description = "Use for game developer tasks in general."
+
+[agents.general_gin_expert]
+config_file = "agents/general/gin-expert.toml"
+description = "Use for gin expert tasks in general."
+
+[agents.general_github_actions_expert]
+config_file = "agents/general/github-actions-expert.toml"
+description = "Use for github actions expert tasks in general."
+
+[agents.general_gitlab_ci_expert]
+config_file = "agents/general/gitlab-ci-expert.toml"
+description = "Use for gitlab ci expert tasks in general."
+
+[agents.general_grpc_expert]
+config_file = "agents/general/grpc-expert.toml"
+description = "Use for grpc expert tasks in general."
+
+[agents.general_jquery_expert]
+config_file = "agents/general/jquery-expert.toml"
+description = "Use for jquery expert tasks in general."
+
+[agents.general_julia_pro]
+config_file = "agents/general/julia-pro.toml"
+description = "Use for julia pro tasks in general."
+
+[agents.general_kafka_expert]
+config_file = "agents/general/kafka-expert.toml"
+description = "Use for kafka expert tasks in general."
+
+[agents.general_knex_expert]
+config_file = "agents/general/knex-expert.toml"
+description = "Use for knex expert tasks in general."
+
+[agents.general_legacy_modernizer_wshobson]
+config_file = "agents/general/legacy-modernizer-wshobson.toml"
+description = "Use for legacy modernizer tasks in general."
+
+[agents.general_legacy_modernizer]
+config_file = "agents/general/legacy-modernizer.toml"
+description = "Use for legacy modernizer tasks in general."
+
+[agents.general_liquibase_expert]
+config_file = "agents/general/liquibase-expert.toml"
+description = "Use for liquibase expert tasks in general."
+
+[agents.general_llms_maintainer]
+config_file = "agents/general/llms-maintainer.toml"
+description = "Use for llms maintainer tasks in general."
+
+[agents.general_malware_analyst]
+config_file = "agents/general/malware-analyst.toml"
+description = "Use for malware analyst tasks in general."
+
+[agents.general_mcp_expert]
+config_file = "agents/general/mcp-expert.toml"
+description = "Use for mcp expert tasks in general."
+
+[agents.general_mcp_registry_navigator]
+config_file = "agents/general/mcp-registry-navigator.toml"
+description = "Use for mcp registry navigator tasks in general."
+
+[agents.general_mcp_testing_engineer]
+config_file = "agents/general/mcp-testing-engineer.toml"
+description = "Use for mcp testing engineer tasks in general."
+
+[agents.general_metadata_agent]
+config_file = "agents/general/metadata-agent.toml"
+description = "Use for metadata agent tasks in general."
+
+[agents.general_minecraft_bukkit_pro]
+config_file = "agents/general/minecraft-bukkit-pro.toml"
+description = "Use for minecraft bukkit pro tasks in general."
+
+[agents.general_moc_agent]
+config_file = "agents/general/moc-agent.toml"
+description = "Use for moc agent tasks in general."
+
+[agents.general_mqtt_expert]
+config_file = "agents/general/mqtt-expert.toml"
+description = "Use for mqtt expert tasks in general."
+
+[agents.general_nats_expert]
+config_file = "agents/general/nats-expert.toml"
+description = "Use for nats expert tasks in general."
+
+[agents.general_ocr_grammar_fixer]
+config_file = "agents/general/ocr-grammar-fixer.toml"
+description = "Use for ocr grammar fixer tasks in general."
+
+[agents.general_openapi_expert]
+config_file = "agents/general/openapi-expert.toml"
+description = "Use for openapi expert tasks in general."
+
+[agents.general_opensearch_expert]
+config_file = "agents/general/opensearch-expert.toml"
+description = "Use for opensearch expert tasks in general."
+
+[agents.general_opentelemetry_expert]
+config_file = "agents/general/opentelemetry-expert.toml"
+description = "Use for opentelemetry expert tasks in general."
+
+[agents.general_owasp_top10_expert]
+config_file = "agents/general/owasp-top10-expert.toml"
+description = "Use for owasp top10 expert tasks in general."
+
+[agents.general_pandas_expert]
+config_file = "agents/general/pandas-expert.toml"
+description = "Use for pandas expert tasks in general."
+
+[agents.general_payment_integration_wshobson]
+config_file = "agents/general/payment-integration-wshobson.toml"
+description = "Use for payment integration tasks in general."
+
+[agents.general_payment_integration]
+config_file = "agents/general/payment-integration.toml"
+description = "Use for payment integration tasks in general."
+
+[agents.general_performance_engineer_wshobson]
+config_file = "agents/general/performance-engineer-wshobson.toml"
+description = "Use for performance engineer tasks in general."
+
+[agents.general_performance_engineer]
+config_file = "agents/general/performance-engineer.toml"
+description = "Use for performance engineer tasks in general."
+
+[agents.general_performance_optimizer]
+config_file = "agents/general/performance-optimizer.toml"
+description = "Use for performance optimizer tasks in general."
+
+[agents.general_perl_expert]
+config_file = "agents/general/perl-expert.toml"
+description = "Use for perl expert tasks in general."
+
+[agents.general_phoenix_expert]
+config_file = "agents/general/phoenix-expert.toml"
+description = "Use for phoenix expert tasks in general."
+
+[agents.general_playwright_expert]
+config_file = "agents/general/playwright-expert.toml"
+description = "Use for playwright expert tasks in general."
+
+[agents.general_podcast_metadata_specialist]
+config_file = "agents/general/podcast-metadata-specialist.toml"
+description = "Use for podcast metadata specialist tasks in general."
+
+[agents.general_podcast_transcriber]
+config_file = "agents/general/podcast-transcriber.toml"
+description = "Use for podcast transcriber tasks in general."
+
+[agents.general_podcast_trend_scout]
+config_file = "agents/general/podcast-trend-scout.toml"
+description = "Use for podcast trend scout tasks in general."
+
+[agents.general_posix_shell_pro]
+config_file = "agents/general/posix-shell-pro.toml"
+description = "Use for posix shell pro tasks in general."
+
+[agents.general_postgres_expert]
+config_file = "agents/general/postgres-expert.toml"
+description = "Use for postgres expert tasks in general."
+
+[agents.general_prisma_expert]
+config_file = "agents/general/prisma-expert.toml"
+description = "Use for prisma expert tasks in general."
+
+[agents.general_project_analyst]
+config_file = "agents/general/project-analyst.toml"
+description = "Use for project analyst tasks in general."
+
+[agents.general_prometheus_expert]
+config_file = "agents/general/prometheus-expert.toml"
+description = "Use for prometheus expert tasks in general."
+
+[agents.general_pulumi_expert]
+config_file = "agents/general/pulumi-expert.toml"
+description = "Use for pulumi expert tasks in general."
+
+[agents.general_puppeteer_expert]
+config_file = "agents/general/puppeteer-expert.toml"
+description = "Use for puppeteer expert tasks in general."
+
+[agents.general_pytorch_expert]
+config_file = "agents/general/pytorch-expert.toml"
+description = "Use for pytorch expert tasks in general."
+
+[agents.general_quant_analyst_wshobson]
+config_file = "agents/general/quant-analyst-wshobson.toml"
+description = "Use for quant analyst tasks in general."
+
+[agents.general_quant_analyst]
+config_file = "agents/general/quant-analyst.toml"
+description = "Use for quant analyst tasks in general."
+
+[agents.general_query_clarifier]
+config_file = "agents/general/query-clarifier.toml"
+description = "Use for query clarifier tasks in general."
+
+[agents.general_rabbitmq_expert]
+config_file = "agents/general/rabbitmq-expert.toml"
+description = "Use for rabbitmq expert tasks in general."
+
+[agents.general_remix_expert]
+config_file = "agents/general/remix-expert.toml"
+description = "Use for remix expert tasks in general."
+
+[agents.general_report_generator]
+config_file = "agents/general/report-generator.toml"
+description = "Use for report generator tasks in general."
+
+[agents.general_rest_expert]
+config_file = "agents/general/rest-expert.toml"
+description = "Use for rest expert tasks in general."
+
+[agents.general_reverse_engineer]
+config_file = "agents/general/reverse-engineer.toml"
+description = "Use for reverse engineer tasks in general."
+
+[agents.general_rollup_expert]
+config_file = "agents/general/rollup-expert.toml"
+description = "Use for rollup expert tasks in general."
+
+[agents.general_scala_expert]
+config_file = "agents/general/scala-expert.toml"
+description = "Use for scala expert tasks in general."
+
+[agents.general_scala_pro]
+config_file = "agents/general/scala-pro.toml"
+description = "Use for scala pro tasks in general."
+
+[agents.general_scikit_learn_expert]
+config_file = "agents/general/scikit-learn-expert.toml"
+description = "Use for scikit learn expert tasks in general."
+
+[agents.general_search_specialist]
+config_file = "agents/general/search-specialist.toml"
+description = "Use for search specialist tasks in general."
+
+[agents.general_selenium_expert]
+config_file = "agents/general/selenium-expert.toml"
+description = "Use for selenium expert tasks in general."
+
+[agents.general_senior_code_reviewer]
+config_file = "agents/general/senior-code-reviewer.toml"
+description = "Use for senior code reviewer tasks in general."
+
+[agents.general_seo_authority_builder]
+config_file = "agents/general/seo-authority-builder.toml"
+description = "Use for seo authority builder tasks in general."
+
+[agents.general_seo_cannibalization_detector]
+config_file = "agents/general/seo-cannibalization-detector.toml"
+description = "Use for seo cannibalization detector tasks in general."
+
+[agents.general_seo_keyword_strategist]
+config_file = "agents/general/seo-keyword-strategist.toml"
+description = "Use for seo keyword strategist tasks in general."
+
+[agents.general_seo_meta_optimizer]
+config_file = "agents/general/seo-meta-optimizer.toml"
+description = "Use for seo meta optimizer tasks in general."
+
+[agents.general_seo_podcast_optimizer]
+config_file = "agents/general/seo-podcast-optimizer.toml"
+description = "Use for seo podcast optimizer tasks in general."
+
+[agents.general_seo_snippet_hunter]
+config_file = "agents/general/seo-snippet-hunter.toml"
+description = "Use for seo snippet hunter tasks in general."
+
+[agents.general_sequelize_expert]
+config_file = "agents/general/sequelize-expert.toml"
+description = "Use for sequelize expert tasks in general."
+
+[agents.general_sidekiq_expert]
+config_file = "agents/general/sidekiq-expert.toml"
+description = "Use for sidekiq expert tasks in general."
+
+[agents.general_sns_expert]
+config_file = "agents/general/sns-expert.toml"
+description = "Use for sns expert tasks in general."
+
+[agents.general_social_media_clip_creator]
+config_file = "agents/general/social-media-clip-creator.toml"
+description = "Use for social media clip creator tasks in general."
+
+[agents.general_social_media_copywriter]
+config_file = "agents/general/social-media-copywriter.toml"
+description = "Use for social media copywriter tasks in general."
+
+[agents.general_solidjs_expert]
+config_file = "agents/general/solidjs-expert.toml"
+description = "Use for solidjs expert tasks in general."
+
+[agents.general_spring_boot_expert]
+config_file = "agents/general/spring-boot-expert.toml"
+description = "Use for spring boot expert tasks in general."
+
+[agents.general_sqlite_expert]
+config_file = "agents/general/sqlite-expert.toml"
+description = "Use for sqlite expert tasks in general."
+
+[agents.general_sqs_expert]
+config_file = "agents/general/sqs-expert.toml"
+description = "Use for sqs expert tasks in general."
+
+[agents.general_stripe_expert]
+config_file = "agents/general/stripe-expert.toml"
+description = "Use for stripe expert tasks in general."
+
+[agents.general_svelte_expert]
+config_file = "agents/general/svelte-expert.toml"
+description = "Use for svelte expert tasks in general."
+
+[agents.general_swiftui_expert]
+config_file = "agents/general/swiftui-expert.toml"
+description = "Use for swiftui expert tasks in general."
+
+[agents.general_tag_agent]
+config_file = "agents/general/tag-agent.toml"
+description = "Use for tag agent tasks in general."
+
+[agents.general_tailwind_expert]
+config_file = "agents/general/tailwind-expert.toml"
+description = "Use for tailwind expert tasks in general."
+
+[agents.general_task_decomposition_expert]
+config_file = "agents/general/task-decomposition-expert.toml"
+description = "Use for task decomposition expert tasks in general."
+
+[agents.general_tauri_expert]
+config_file = "agents/general/tauri-expert.toml"
+description = "Use for tauri expert tasks in general."
+
+[agents.general_technical_researcher]
+config_file = "agents/general/technical-researcher.toml"
+description = "Use for technical researcher tasks in general."
+
+[agents.general_tensorflow_expert]
+config_file = "agents/general/tensorflow-expert.toml"
+description = "Use for tensorflow expert tasks in general."
+
+[agents.general_testcafe_expert]
+config_file = "agents/general/testcafe-expert.toml"
+description = "Use for testcafe expert tasks in general."
+
+[agents.general_text_comparison_validator]
+config_file = "agents/general/text-comparison-validator.toml"
+description = "Use for text comparison validator tasks in general."
+
+[agents.general_timestamp_precision_specialist]
+config_file = "agents/general/timestamp-precision-specialist.toml"
+description = "Use for timestamp precision specialist tasks in general."
+
+[agents.general_trpc_expert]
+config_file = "agents/general/trpc-expert.toml"
+description = "Use for trpc expert tasks in general."
+
+[agents.general_typeorm_expert]
+config_file = "agents/general/typeorm-expert.toml"
+description = "Use for typeorm expert tasks in general."
+
+[agents.general_unity_developer]
+config_file = "agents/general/unity-developer.toml"
+description = "Use for unity developer tasks in general."
+
+[agents.general_url_link_extractor]
+config_file = "agents/general/url-link-extractor.toml"
+description = "Use for url link extractor tasks in general."
+
+[agents.general_visual_analysis_ocr]
+config_file = "agents/general/visual-analysis-ocr.toml"
+description = "Use for visual analysis ocr tasks in general."
+
+[agents.general_vitest_expert]
+config_file = "agents/general/vitest-expert.toml"
+description = "Use for vitest expert tasks in general."
+
+[agents.general_webpack_expert]
+config_file = "agents/general/webpack-expert.toml"
+description = "Use for webpack expert tasks in general."
+
+[agents.general_websocket_expert]
+config_file = "agents/general/websocket-expert.toml"
+description = "Use for websocket expert tasks in general."
+
+[agents.general_wordpress_developer]
+config_file = "agents/general/wordpress-developer.toml"
+description = "Use for wordpress developer tasks in general."
+
+[agents.languages_runtime_bash_expert]
+config_file = "agents/languages-runtime/bash-expert.toml"
+description = "Use for bash expert tasks in languages runtime."
+
+[agents.languages_runtime_bash_pro]
+config_file = "agents/languages-runtime/bash-pro.toml"
+description = "Use for bash pro tasks in languages runtime."
+
+[agents.languages_runtime_bun_expert]
+config_file = "agents/languages-runtime/bun-expert.toml"
+description = "Use for bun expert tasks in languages runtime."
+
+[agents.languages_runtime_c_developer]
+config_file = "agents/languages-runtime/c-developer.toml"
+description = "Use for c developer tasks in languages runtime."
+
+[agents.languages_runtime_c_expert]
+config_file = "agents/languages-runtime/c-expert.toml"
+description = "Use for c expert tasks in languages runtime."
+
+[agents.languages_runtime_c_pro]
+config_file = "agents/languages-runtime/c-pro.toml"
+description = "Use for c pro tasks in languages runtime."
+
+[agents.languages_runtime_clojure_expert]
+config_file = "agents/languages-runtime/clojure-expert.toml"
+description = "Use for clojure expert tasks in languages runtime."
+
+[agents.languages_runtime_cpp_engineer]
+config_file = "agents/languages-runtime/cpp-engineer.toml"
+description = "Use for cpp engineer tasks in languages runtime."
+
+[agents.languages_runtime_cpp_expert]
+config_file = "agents/languages-runtime/cpp-expert.toml"
+description = "Use for cpp expert tasks in languages runtime."
+
+[agents.languages_runtime_cpp_pro]
+config_file = "agents/languages-runtime/cpp-pro.toml"
+description = "Use for cpp pro tasks in languages runtime."
+
+[agents.languages_runtime_csharp_expert]
+config_file = "agents/languages-runtime/csharp-expert.toml"
+description = "Use for csharp expert tasks in languages runtime."
+
+[agents.languages_runtime_csharp_pro]
+config_file = "agents/languages-runtime/csharp-pro.toml"
+description = "Use for csharp pro tasks in languages runtime."
+
+[agents.languages_runtime_dart_expert]
+config_file = "agents/languages-runtime/dart-expert.toml"
+description = "Use for dart expert tasks in languages runtime."
+
+[agents.languages_runtime_deno_expert]
+config_file = "agents/languages-runtime/deno-expert.toml"
+description = "Use for deno expert tasks in languages runtime."
+
+[agents.languages_runtime_elixir_expert]
+config_file = "agents/languages-runtime/elixir-expert.toml"
+description = "Use for elixir expert tasks in languages runtime."
+
+[agents.languages_runtime_elixir_pro]
+config_file = "agents/languages-runtime/elixir-pro.toml"
+description = "Use for elixir pro tasks in languages runtime."
+
+[agents.languages_runtime_erlang_expert]
+config_file = "agents/languages-runtime/erlang-expert.toml"
+description = "Use for erlang expert tasks in languages runtime."
+
+[agents.languages_runtime_go_expert]
+config_file = "agents/languages-runtime/go-expert.toml"
+description = "Use for go expert tasks in languages runtime."
+
+[agents.languages_runtime_golang_expert]
+config_file = "agents/languages-runtime/golang-expert.toml"
+description = "Use for golang expert tasks in languages runtime."
+
+[agents.languages_runtime_golang_pro]
+config_file = "agents/languages-runtime/golang-pro.toml"
+description = "Use for golang pro tasks in languages runtime."
+
+[agents.languages_runtime_haskell_expert]
+config_file = "agents/languages-runtime/haskell-expert.toml"
+description = "Use for haskell expert tasks in languages runtime."
+
+[agents.languages_runtime_haskell_pro]
+config_file = "agents/languages-runtime/haskell-pro.toml"
+description = "Use for haskell pro tasks in languages runtime."
+
+[agents.languages_runtime_java_developer]
+config_file = "agents/languages-runtime/java-developer.toml"
+description = "Use for java developer tasks in languages runtime."
+
+[agents.languages_runtime_java_expert]
+config_file = "agents/languages-runtime/java-expert.toml"
+description = "Use for java expert tasks in languages runtime."
+
+[agents.languages_runtime_java_pro]
+config_file = "agents/languages-runtime/java-pro.toml"
+description = "Use for java pro tasks in languages runtime."
+
+[agents.languages_runtime_javascript_developer]
+config_file = "agents/languages-runtime/javascript-developer.toml"
+description = "Use for javascript developer tasks in languages runtime."
+
+[agents.languages_runtime_javascript_expert]
+config_file = "agents/languages-runtime/javascript-expert.toml"
+description = "Use for javascript expert tasks in languages runtime."
+
+[agents.languages_runtime_javascript_pro]
+config_file = "agents/languages-runtime/javascript-pro.toml"
+description = "Use for javascript pro tasks in languages runtime."
+
+[agents.languages_runtime_kotlin_expert]
+config_file = "agents/languages-runtime/kotlin-expert.toml"
+description = "Use for kotlin expert tasks in languages runtime."
+
+[agents.languages_runtime_lua_expert]
+config_file = "agents/languages-runtime/lua-expert.toml"
+description = "Use for lua expert tasks in languages runtime."
+
+[agents.languages_runtime_ocaml_expert]
+config_file = "agents/languages-runtime/ocaml-expert.toml"
+description = "Use for ocaml expert tasks in languages runtime."
+
+[agents.languages_runtime_performance_expert]
+config_file = "agents/languages-runtime/performance-expert.toml"
+description = "Use for performance expert tasks in languages runtime."
+
+[agents.languages_runtime_php_developer]
+config_file = "agents/languages-runtime/php-developer.toml"
+description = "Use for php developer tasks in languages runtime."
+
+[agents.languages_runtime_php_expert]
+config_file = "agents/languages-runtime/php-expert.toml"
+description = "Use for php expert tasks in languages runtime."
+
+[agents.languages_runtime_php_pro]
+config_file = "agents/languages-runtime/php-pro.toml"
+description = "Use for php pro tasks in languages runtime."
+
+[agents.languages_runtime_python_expert_davepoon]
+config_file = "agents/languages-runtime/python-expert-davepoon.toml"
+description = "Use for python expert tasks in languages runtime."
+
+[agents.languages_runtime_python_expert_vijaythecoder]
+config_file = "agents/languages-runtime/python-expert-vijaythecoder.toml"
+description = "Use for python expert tasks in languages runtime."
+
+[agents.languages_runtime_python_expert]
+config_file = "agents/languages-runtime/python-expert.toml"
+description = "Use for python expert tasks in languages runtime."
+
+[agents.languages_runtime_python_pro]
+config_file = "agents/languages-runtime/python-pro.toml"
+description = "Use for python pro tasks in languages runtime."
+
+[agents.languages_runtime_ruby_expert_davepoon]
+config_file = "agents/languages-runtime/ruby-expert-davepoon.toml"
+description = "Use for ruby expert tasks in languages runtime."
+
+[agents.languages_runtime_ruby_expert]
+config_file = "agents/languages-runtime/ruby-expert.toml"
+description = "Use for ruby expert tasks in languages runtime."
+
+[agents.languages_runtime_ruby_pro]
+config_file = "agents/languages-runtime/ruby-pro.toml"
+description = "Use for ruby pro tasks in languages runtime."
+
+[agents.languages_runtime_rust_expert_davepoon]
+config_file = "agents/languages-runtime/rust-expert-davepoon.toml"
+description = "Use for rust expert tasks in languages runtime."
+
+[agents.languages_runtime_rust_expert]
+config_file = "agents/languages-runtime/rust-expert.toml"
+description = "Use for rust expert tasks in languages runtime."
+
+[agents.languages_runtime_rust_pro]
+config_file = "agents/languages-runtime/rust-pro.toml"
+description = "Use for rust pro tasks in languages runtime."
+
+[agents.languages_runtime_swift_expert]
+config_file = "agents/languages-runtime/swift-expert.toml"
+description = "Use for swift expert tasks in languages runtime."
+
+[agents.languages_runtime_testing_expert]
+config_file = "agents/languages-runtime/testing-expert.toml"
+description = "Use for testing expert tasks in languages runtime."
+
+[agents.languages_runtime_typescript_expert_davepoon]
+config_file = "agents/languages-runtime/typescript-expert-davepoon.toml"
+description = "Use for typescript expert tasks in languages runtime."
+
+[agents.languages_runtime_typescript_expert]
+config_file = "agents/languages-runtime/typescript-expert.toml"
+description = "Use for typescript expert tasks in languages runtime."
+
+[agents.languages_runtime_typescript_pro]
+config_file = "agents/languages-runtime/typescript-pro.toml"
+description = "Use for typescript pro tasks in languages runtime."
+
+[agents.languages_runtime_web_scraping_expert]
+config_file = "agents/languages-runtime/web-scraping-expert.toml"
+description = "Use for web scraping expert tasks in languages runtime."
+
+[agents.mobile_android_expert]
+config_file = "agents/mobile/android-expert.toml"
+description = "Use for android expert tasks in mobile."
+
+[agents.mobile_expo_expert]
+config_file = "agents/mobile/expo-expert.toml"
+description = "Use for expo expert tasks in mobile."
+
+[agents.mobile_flutter_expert_wshobson]
+config_file = "agents/mobile/flutter-expert-wshobson.toml"
+description = "Use for flutter expert tasks in mobile."
+
+[agents.mobile_flutter_expert]
+config_file = "agents/mobile/flutter-expert.toml"
+description = "Use for flutter expert tasks in mobile."
+
+[agents.mobile_ios_developer_wshobson]
+config_file = "agents/mobile/ios-developer-wshobson.toml"
+description = "Use for ios developer tasks in mobile."
+
+[agents.mobile_ios_developer]
+config_file = "agents/mobile/ios-developer.toml"
+description = "Use for ios developer tasks in mobile."
+
+[agents.mobile_ios_expert]
+config_file = "agents/mobile/ios-expert.toml"
+description = "Use for ios expert tasks in mobile."
+
+[agents.mobile_mobile_developer]
+config_file = "agents/mobile/mobile-developer.toml"
+description = "Use for mobile developer tasks in mobile."
+
+[agents.product_business_business_analyst]
+config_file = "agents/product-business/business-analyst.toml"
+description = "Use for business analyst tasks in product business."
+
+[agents.product_business_customer_support_wshobson]
+config_file = "agents/product-business/customer-support-wshobson.toml"
+description = "Use for customer support tasks in product business."
+
+[agents.product_business_customer_support]
+config_file = "agents/product-business/customer-support.toml"
+description = "Use for customer support tasks in product business."
+
+[agents.product_business_sales_automator_wshobson]
+config_file = "agents/product-business/sales-automator-wshobson.toml"
+description = "Use for sales automator tasks in product business."
+
+[agents.product_business_sales_automator]
+config_file = "agents/product-business/sales-automator.toml"
+description = "Use for sales automator tasks in product business."
+
+[agents.product_business_startup_analyst]
+config_file = "agents/product-business/startup-analyst.toml"
+description = "Use for startup analyst tasks in product business."
+
+[agents.security_crypto_risk_manager]
+config_file = "agents/security/crypto-risk-manager.toml"
+description = "Use for crypto risk manager tasks in security."
+
+[agents.security_hr_pro]
+config_file = "agents/security/hr-pro.toml"
+description = "Use for hr pro tasks in security."
+
+[agents.security_jwt_expert]
+config_file = "agents/security/jwt-expert.toml"
+description = "Use for jwt expert tasks in security."
+
+[agents.security_keycloak_expert]
+config_file = "agents/security/keycloak-expert.toml"
+description = "Use for keycloak expert tasks in security."
+
+[agents.security_legal_advisor]
+config_file = "agents/security/legal-advisor.toml"
+description = "Use for legal advisor tasks in security."
+
+[agents.security_mcp_security_auditor]
+config_file = "agents/security/mcp-security-auditor.toml"
+description = "Use for mcp security auditor tasks in security."
+
+[agents.security_oauth_oidc_expert]
+config_file = "agents/security/oauth-oidc-expert.toml"
+description = "Use for oauth oidc expert tasks in security."
+
+[agents.security_risk_manager_wshobson]
+config_file = "agents/security/risk-manager-wshobson.toml"
+description = "Use for risk manager tasks in security."
+
+[agents.security_risk_manager]
+config_file = "agents/security/risk-manager.toml"
+description = "Use for risk manager tasks in security."
+
+[agents.security_security_auditor_wshobson]
+config_file = "agents/security/security-auditor-wshobson.toml"
+description = "Use for security auditor tasks in security."
+
+[agents.security_security_auditor]
+config_file = "agents/security/security-auditor.toml"
+description = "Use for security auditor tasks in security."
+
+[agents.security_security_expert]
+config_file = "agents/security/security-expert.toml"
+description = "Use for security expert tasks in security."
+
+[agents.security_threat_modeling_expert]
+config_file = "agents/security/threat-modeling-expert.toml"
+description = "Use for threat modeling expert tasks in security."
+
+[agents.testing_quality_audio_quality_controller]
+config_file = "agents/testing-quality/audio-quality-controller.toml"
+description = "Use for audio quality controller tasks in testing quality."
+
+[agents.testing_quality_cypress_expert]
+config_file = "agents/testing-quality/cypress-expert.toml"
+description = "Use for cypress expert tasks in testing quality."
+
+[agents.testing_quality_jasmine_expert]
+config_file = "agents/testing-quality/jasmine-expert.toml"
+description = "Use for jasmine expert tasks in testing quality."
+
+[agents.testing_quality_jest_expert]
+config_file = "agents/testing-quality/jest-expert.toml"
+description = "Use for jest expert tasks in testing quality."
+
+[agents.testing_quality_mocha_expert]
+config_file = "agents/testing-quality/mocha-expert.toml"
+description = "Use for mocha expert tasks in testing quality."
+
+[agents.testing_quality_ocr_quality_assurance]
+config_file = "agents/testing-quality/ocr-quality-assurance.toml"
+description = "Use for ocr quality assurance tasks in testing quality."
+
+[agents.testing_quality_review_agent]
+config_file = "agents/testing-quality/review-agent.toml"
+description = "Use for review agent tasks in testing quality."
+
+[agents.testing_quality_test_automator_wshobson]
+config_file = "agents/testing-quality/test-automator-wshobson.toml"
+description = "Use for test automator tasks in testing quality."
+
+[agents.testing_quality_test_automator]
+config_file = "agents/testing-quality/test-automator.toml"
+description = "Use for test automator tasks in testing quality."

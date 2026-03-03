@@ -5,6 +5,10 @@
 config_file = "teams/ui-delivery-team.toml"
 description = "Use only when a human explicitly asks for the UI Delivery Team to orchestrate frontend execution across design, accessibility, performance, and framework specialists."
 
+[agents.backend_delivery_team]
+config_file = "teams/backend-delivery-team.toml"
+description = "Use only when a human explicitly asks for the Backend Delivery Team to orchestrate backend delivery across API, data, security, and framework-specific execution."
+
 [agents.api_architect]
 config_file = "agents/architecture-orchestration/api-architect.toml"
 description = "Use when choosing API architecture, service boundaries, and long-term interface evolution."
@@ -176,6 +180,10 @@ description = "Use when audit expertise is needed to unblock implementation deci
 [agents.backend_developer]
 config_file = "agents/backend-api/backend-developer.toml"
 description = "Use when specialized implementation support is needed for reliable delivery."
+
+[agents.convex_expert]
+config_file = "agents/backend-api/convex-expert.toml"
+description = "Use when Convex is actually in scope and you need Convex-specific schema, function, auth, indexing, migration, and operational expertise."
 
 [agents.backend_security_coder]
 config_file = "agents/backend-api/backend-security-coder.toml"

@@ -5,9 +5,17 @@
 config_file = "agents/architecture-orchestration/api-architect.toml"
 description = "Use for api architect tasks in architecture orchestration."
 
+[agents.architecture_orchestration_api_designer]
+config_file = "agents/architecture-orchestration/api_designer.toml"
+description = "Use for api designer tasks in architecture orchestration."
+
 [agents.architecture_orchestration_architect_review]
 config_file = "agents/architecture-orchestration/architect-review.toml"
 description = "Use for architect review tasks in architecture orchestration."
+
+[agents.architecture_orchestration_architect]
+config_file = "agents/architecture-orchestration/architect.toml"
+description = "Use for architect tasks in architecture orchestration."
 
 [agents.architecture_orchestration_backend_architect]
 config_file = "agents/architecture-orchestration/backend-architect.toml"
@@ -89,9 +97,17 @@ description = "Use for mcp deployment orchestrator tasks in architecture orchest
 config_file = "agents/architecture-orchestration/mcp-server-architect.toml"
 description = "Use for mcp server architect tasks in architecture orchestration."
 
+[agents.architecture_orchestration_migrator]
+config_file = "agents/architecture-orchestration/migrator.toml"
+description = "Use for migrator tasks in architecture orchestration."
+
 [agents.architecture_orchestration_monorepo_architect]
 config_file = "agents/architecture-orchestration/monorepo-architect.toml"
 description = "Use for monorepo architect tasks in architecture orchestration."
+
+[agents.architecture_orchestration_plan_checker]
+config_file = "agents/architecture-orchestration/plan-checker.toml"
+description = "Use for plan checker tasks in architecture orchestration."
 
 [agents.architecture_orchestration_project_supervisor_orchestrator]
 config_file = "agents/architecture-orchestration/project-supervisor-orchestrator.toml"
@@ -273,6 +289,10 @@ description = "Use for defi strategist tasks in blockchain web3."
 config_file = "agents/blockchain-web3/hyperledger-fabric-developer.toml"
 description = "Use for hyperledger fabric developer tasks in blockchain web3."
 
+[agents.blockchain_web3_smart_contract]
+config_file = "agents/blockchain-web3/smart_contract.toml"
+description = "Use for smart contract tasks in blockchain web3."
+
 [agents.data_ai_ml_academic_research_synthesizer]
 config_file = "agents/data-ai-ml/academic-research-synthesizer.toml"
 description = "Use for academic research synthesizer tasks in data ai ml."
@@ -296,6 +316,10 @@ description = "Use for data engineer tasks in data ai ml."
 [agents.data_ai_ml_data_scientist]
 config_file = "agents/data-ai-ml/data-scientist.toml"
 description = "Use for data scientist tasks in data ai ml."
+
+[agents.data_ai_ml_data_pipeline]
+config_file = "agents/data-ai-ml/data_pipeline.toml"
+description = "Use for data pipeline tasks in data ai ml."
 
 [agents.data_ai_ml_hackathon_ai_strategist]
 config_file = "agents/data-ai-ml/hackathon-ai-strategist.toml"
@@ -425,6 +449,10 @@ description = "Use for devops cicd expert tasks in devops cloud infra."
 config_file = "agents/devops-cloud-infra/devops-troubleshooter.toml"
 description = "Use for devops troubleshooter tasks in devops cloud infra."
 
+[agents.devops_cloud_infra_devops]
+config_file = "agents/devops-cloud-infra/devops.toml"
+description = "Use for devops tasks in devops cloud infra."
+
 [agents.devops_cloud_infra_docker_expert]
 config_file = "agents/devops-cloud-infra/docker-expert.toml"
 description = "Use for docker expert tasks in devops cloud infra."
@@ -481,9 +509,17 @@ description = "Use for code reviewer tasks in documentation content."
 config_file = "agents/documentation-content/content-marketer.toml"
 description = "Use for content marketer tasks in documentation content."
 
+[agents.documentation_content_content_writer]
+config_file = "agents/documentation-content/content_writer.toml"
+description = "Use for content writer tasks in documentation content."
+
 [agents.documentation_content_documentation_specialist]
 config_file = "agents/documentation-content/documentation-specialist.toml"
 description = "Use for documentation specialist tasks in documentation content."
+
+[agents.documentation_content_documenter]
+config_file = "agents/documentation-content/documenter.toml"
+description = "Use for documenter tasks in documentation content."
 
 [agents.documentation_content_markdown_syntax_formatter]
 config_file = "agents/documentation-content/markdown-syntax-formatter.toml"
@@ -532,6 +568,10 @@ description = "Use for accessibility expert tasks in frontend ui."
 [agents.frontend_ui_accessibility_specialist]
 config_file = "agents/frontend-ui/accessibility-specialist.toml"
 description = "Use for accessibility specialist tasks in frontend ui."
+
+[agents.frontend_ui_accessibility_wcag_auditor]
+config_file = "agents/frontend-ui/accessibility-wcag-auditor.toml"
+description = "Use for accessibility wcag auditor tasks in frontend ui."
 
 [agents.frontend_ui_angular_expert]
 config_file = "agents/frontend-ui/angular-expert.toml"
@@ -929,6 +969,10 @@ description = "Use for query clarifier tasks in general."
 config_file = "agents/general/rabbitmq-expert.toml"
 description = "Use for rabbitmq expert tasks in general."
 
+[agents.general_refactorer]
+config_file = "agents/general/refactorer.toml"
+description = "Use for refactorer tasks in general."
+
 [agents.general_remix_expert]
 config_file = "agents/general/remix-expert.toml"
 description = "Use for remix expert tasks in general."
@@ -960,6 +1004,10 @@ description = "Use for scala pro tasks in general."
 [agents.general_scikit_learn_expert]
 config_file = "agents/general/scikit-learn-expert.toml"
 description = "Use for scikit learn expert tasks in general."
+
+[agents.general_scout]
+config_file = "agents/general/scout.toml"
+description = "Use for scout tasks in general."
 
 [agents.general_selenium_expert]
 config_file = "agents/general/selenium-expert.toml"
@@ -1401,6 +1449,38 @@ description = "Use for ocr quality assurance tasks in testing quality."
 config_file = "agents/testing-quality/review-agent.toml"
 description = "Use for review agent tasks in testing quality."
 
+[agents.testing_quality_tdd_test_writer]
+config_file = "agents/testing-quality/tdd_test_writer.toml"
+description = "Use for tdd test writer tasks in testing quality."
+
 [agents.testing_quality_test_automator]
 config_file = "agents/testing-quality/test-automator.toml"
 description = "Use for test automator tasks in testing quality."
+
+[agents.workers_sparky]
+config_file = "agents/workers/sparky.toml"
+description = "Use for sparky tasks in workers."
+
+[agents.workers_worker_high]
+config_file = "agents/workers/worker_high.toml"
+description = "Use for worker high tasks in workers."
+
+[agents.workers_worker_medium]
+config_file = "agents/workers/worker_medium.toml"
+description = "Use for worker medium tasks in workers."
+
+[agents.workers_worker_mini]
+config_file = "agents/workers/worker_mini.toml"
+description = "Use for worker mini tasks in workers."
+
+[agents.workers_worker_spark_high]
+config_file = "agents/workers/worker_spark_high.toml"
+description = "Use for worker spark high tasks in workers."
+
+[agents.workers_worker_spark_xhigh]
+config_file = "agents/workers/worker_spark_xhigh.toml"
+description = "Use for worker spark xhigh tasks in workers."
+
+[agents.workers_worker_xhigh]
+config_file = "agents/workers/worker_xhigh.toml"
+description = "Use for worker xhigh tasks in workers."

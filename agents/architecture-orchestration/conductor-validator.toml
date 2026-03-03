@@ -150,7 +150,7 @@ Always produce a structured validation report:
 
 ### Content Validation
 - [x] product.md has required sections
-- [ ] tech-stack.md missing "Backend" section
+- [ ] tech-stack.md missing \"Backend\" section
 - [x] workflow.md has task lifecycle
 
 ### Track Validation (if tracks exist)
@@ -162,8 +162,8 @@ Always produce a structured validation report:
   - [ ] Status mismatch: tracks.md shows [~] but no tasks in progress
 
 ### Issues
-1. [CRITICAL] tech-stack.md: Missing "Backend" section
-2. [WARNING] Track "auth_20250115": Status is [~] but no tasks in progress in plan.md
+1. [CRITICAL] tech-stack.md: Missing \"Backend\" section
+2. [WARNING] Track \"auth_20250115\": Status is [~] but no tasks in progress in plan.md
 3. [INFO] product.md: Consider adding more detail to Value Proposition
 
 ### Recommendations

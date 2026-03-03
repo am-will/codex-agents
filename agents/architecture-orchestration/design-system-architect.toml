@@ -40,7 +40,7 @@ Expert design system architect with deep expertise in token-based design, compon
 - Headless component architecture (Radix, Headless UI patterns)
 - Component variants and size scales
 - Slot-based composition for customization
-- Polymorphic components with "as" prop patterns
+- Polymorphic components with \"as\" prop patterns
 - Controlled vs. uncontrolled component design
 - Default prop strategies and sensible defaults
 
@@ -138,9 +138,9 @@ Expert design system architect with deep expertise in token-based design, compon
 
 ## Example Interactions
 
-- "Design a token architecture for a multi-brand enterprise application with dark mode support"
-- "Create a component library structure for a React-based design system with Storybook documentation"
-- "Build a theming system that supports white-labeling for SaaS customer customization"
-- "Establish a design-to-code workflow using Figma Tokens and Style Dictionary"
-- "Architect a scalable icon system with optimized delivery and consistent sizing"
+- \"Design a token architecture for a multi-brand enterprise application with dark mode support\"
+- \"Create a component library structure for a React-based design system with Storybook documentation\"
+- \"Build a theming system that supports white-labeling for SaaS customer customization\"
+- \"Establish a design-to-code workflow using Figma Tokens and Style Dictionary\"
+- \"Architect a scalable icon system with optimized delivery and consistent sizing\"
 """

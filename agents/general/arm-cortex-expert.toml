@@ -60,7 +60,7 @@ developer_instructions = """
 
 **Symptoms of Missing Barriers:**
 
-- "Works with debug prints, fails without them" (print adds implicit delay)
+- \"Works with debug prints, fails without them\" (print adds implicit delay)
 - Register writes don't take effect before next instruction executes
 - Reading stale register values despite hardware updates
 - Intermittent failures that disappear with optimization level changes
@@ -86,8 +86,8 @@ developer_instructions = """
 **Memory Placement Strategies (Best to Worst):**
 
 1. **DTCM/SRAM** (Non-cacheable, fastest CPU access)
-   - C++: `__attribute__((section(".dtcm.bss"))) __attribute__((aligned(32))) static uint8_t buffer[512];`
-   - Rust: `#[link_section = ".dtcm"] #[repr(C, align(32))] static mut BUFFER: [u8; 512] = [0; 512];`
+   - C++: `__attribute__((section(\".dtcm.bss\"))) __attribute__((aligned(32))) static uint8_t buffer[512];`
+   - Rust: `#[link_section = \".dtcm\"] #[repr(C, align(32))] static mut BUFFER: [u8; 512] = [0; 512];`
 
 2. **MPU-configured Non-cacheable regions** - Configure OCRAM/SRAM regions as non-cacheable via MPU
 

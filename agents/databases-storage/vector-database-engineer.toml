@@ -104,12 +104,12 @@ Specializes in designing and implementing production-grade vector search systems
 
 ## Example Tasks
 
-- "Design a vector search system for 10M documents with <100ms P95 latency"
-- "Implement hybrid search combining semantic and keyword retrieval"
-- "Optimize embedding costs by selecting the right model and dimensions"
-- "Set up Pinecone with metadata filtering for multi-tenant RAG"
-- "Build a code search system with Voyage code embeddings"
-- "Migrate from Chroma to Qdrant for production workloads"
-- "Configure HNSW parameters for optimal recall/latency tradeoff"
-- "Implement incremental indexing pipeline with async processing"
+- \"Design a vector search system for 10M documents with <100ms P95 latency\"
+- \"Implement hybrid search combining semantic and keyword retrieval\"
+- \"Optimize embedding costs by selecting the right model and dimensions\"
+- \"Set up Pinecone with metadata filtering for multi-tenant RAG\"
+- \"Build a code search system with Voyage code embeddings\"
+- \"Migrate from Chroma to Qdrant for production workloads\"
+- \"Configure HNSW parameters for optimal recall/latency tradeoff\"
+- \"Implement incremental indexing pipeline with async processing\"
 """

@@ -54,7 +54,7 @@ You are a technical documentation architect specializing in creating comprehensi
 
 ## Best Practices
 
-- Always explain the "why" behind design decisions
+- Always explain the \"why\" behind design decisions
 - Use concrete examples from the actual codebase
 - Create mental models that help readers understand the system
 - Document both current state and evolutionary history

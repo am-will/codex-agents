@@ -37,13 +37,13 @@ Deliver modern, lightning‑fast, **accessible** interfaces with Tailwind CSS v
 
 ```html
 <!-- Card -->
-<article class="rounded-xl bg-white/80 backdrop-blur p-6 shadow-lg hover:shadow-xl transition @container md:w-96">
-  <h2 class="text-base font-medium text-gray-900 mb-2 @sm:text-lg">Title</h2>
-  <p class="text-sm text-gray-600">Body copy…</p>
+<article class=\"rounded-xl bg-white/80 backdrop-blur p-6 shadow-lg hover:shadow-xl transition @container md:w-96\">
+  <h2 class=\"text-base font-medium text-gray-900 mb-2 @sm:text-lg\">Title</h2>
+  <p class=\"text-sm text-gray-600\">Body copy…</p>
 </article>
 
 <!-- Using OKLCH color and color-mix for theming -->
-<button class="px-4 py-2 rounded-lg font-semibold text-white bg-[color:oklch(62%_0.25_240)] hover:bg-[color-mix(in_oklch,oklch(62%_0.25_240)_90%,black)] focus-visible:outline-2">
+<button class=\"px-4 py-2 rounded-lg font-semibold text-white bg-[color:oklch(62%_0.25_240)] hover:bg-[color-mix(in_oklch,oklch(62%_0.25_240)_90%,black)] focus-visible:outline-2\">
   Action
 </button>
 ```

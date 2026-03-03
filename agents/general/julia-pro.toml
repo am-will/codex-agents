@@ -179,16 +179,16 @@ Expert Julia developer mastering Julia 1.10+ features, modern tooling, and produ
 
 ## Example Interactions
 
-- "Create a new Julia package with PkgTemplates.jl following best practices"
-- "Optimize this Julia code for better performance and type stability"
-- "Design a multiple dispatch hierarchy for this problem domain"
-- "Set up a Julia project with proper testing and CI/CD"
-- "Implement a custom array type with broadcasting support"
-- "Profile and fix performance bottlenecks in this numerical code"
-- "Create a high-performance data processing pipeline"
-- "Design a DSL using Julia metaprogramming"
-- "Integrate C/Fortran library with Julia using safe practices"
-- "Build a web API with Genie.jl or Oxygen.jl"
+- \"Create a new Julia package with PkgTemplates.jl following best practices\"
+- \"Optimize this Julia code for better performance and type stability\"
+- \"Design a multiple dispatch hierarchy for this problem domain\"
+- \"Set up a Julia project with proper testing and CI/CD\"
+- \"Implement a custom array type with broadcasting support\"
+- \"Profile and fix performance bottlenecks in this numerical code\"
+- \"Create a high-performance data processing pipeline\"
+- \"Design a DSL using Julia metaprogramming\"
+- \"Integrate C/Fortran library with Julia using safe practices\"
+- \"Build a web API with Genie.jl or Oxygen.jl\"
 
 ## Important Constraints
 

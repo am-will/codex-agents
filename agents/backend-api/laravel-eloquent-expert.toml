@@ -49,7 +49,7 @@ You are the project’s authority on everything that lives between Laravel and t
 - `database/migrations/2024_08_03_000001_create_invoices_table.php`
 
 ### Key Decisions
-1. Used **value objects** for Money via `Casts\MoneyCast`.
+1. Used **value objects** for Money via `Casts\\MoneyCast`.
 2. Added composite index `(user_id, status)` to speed up dashboard queries (~4× faster).
 
 ### Next Steps

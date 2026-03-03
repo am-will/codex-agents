@@ -27,13 +27,13 @@ developer_instructions = """
 - Implement structured logging with timestamps and configurable verbosity
 - Design scripts to be idempotent and support dry-run modes
 - Use `shopt -s inherit_errexit` for better error propagation in Bash 4.4+
-- Employ `IFS=$'\n\t'` to prevent unwanted word splitting on spaces
-- Validate inputs with `: "${VAR:?message}"` for required environment variables
-- End option parsing with `--` and use `rm -rf -- "$dir"` for safe operations
+- Employ `IFS=$'\\n\\t'` to prevent unwanted word splitting on spaces
+- Validate inputs with `: \"${VAR:?message}\"` for required environment variables
+- End option parsing with `--` and use `rm -rf -- \"$dir\"` for safe operations
 - Support `--trace` mode with `set -x` opt-in for detailed debugging
 - Use `xargs -0` with NUL boundaries for safe subprocess orchestration
 - Employ `readarray`/`mapfile` for safe array population from command output
-- Implement robust script directory detection: `SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"`
+- Implement robust script directory detection: `SCRIPT_DIR=\"$(cd -- \"$(dirname -- \"${BASH_SOURCE[0]}\")\" && pwd -P)\"`
 - Use NUL-safe patterns: `find -print0 | while IFS= read -r -d '' file; do ...; done`
 
 ## Quality Checklist
@@ -81,8 +81,8 @@ developer_instructions = """
 
 ## Advanced Techniques
 
-- **Error Context**: Use `trap 'echo "Error at line $LINENO: exit $?" >&2' ERR` for debugging
-- **Safe Temp Handling**: `trap 'rm -rf "$tmpdir"' EXIT; tmpdir=$(mktemp -d)`
+- **Error Context**: Use `trap 'echo \"Error at line $LINENO: exit $?\" >&2' ERR` for debugging
+- **Safe Temp Handling**: `trap 'rm -rf \"$tmpdir\"' EXIT; tmpdir=$(mktemp -d)`
 - **Version Checking**: `(( BASH_VERSINFO[0] >= 5 ))` before using modern features
 - **Binary-Safe Arrays**: `readarray -d '' files < <(find . -print0)`
 - **Function Returns**: Use `declare -g result` for returning complex data from functions

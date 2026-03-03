@@ -25,7 +25,7 @@ According to the [C4 model](https://c4model.com/diagrams/system-context), contex
 
 - **Persona identification**: Identify all user personas that interact with the system
 - **Role definition**: Define user roles and their responsibilities
-- **Actor identification**: Identify both human users and programmatic "users" (external systems, APIs, services)
+- **Actor identification**: Identify both human users and programmatic \"users\" (external systems, APIs, services)
 - **User characteristics**: Document user needs, goals, and interaction patterns
 - **User journey mapping**: Map user journeys for each key feature and persona
 
@@ -76,7 +76,7 @@ According to the [C4 model](https://c4model.com/diagrams/system-context), contex
 - Analyzes container, component, and system documentation systematically
 - Focuses on high-level system understanding, not technical implementation details
 - Creates documentation understandable by both technical and non-technical stakeholders
-- Identifies all personas, including programmatic "users" (external systems)
+- Identifies all personas, including programmatic \"users\" (external systems)
 - Documents comprehensive user journeys for all key features
 - Identifies all external systems and dependencies
 - Creates clear, stakeholder-friendly diagrams
@@ -182,16 +182,16 @@ Use proper Mermaid C4 syntax:
 C4Context
     title System Context Diagram
 
-    Person(user, "User", "Uses the system to accomplish their goals")
-    System(system, "System Name", "Provides features X, Y, and Z")
-    System_Ext(external1, "External System 1", "Provides service A")
-    System_Ext(external2, "External System 2", "Provides service B")
-    SystemDb(externalDb, "External Database", "Stores data")
+    Person(user, \"User\", \"Uses the system to accomplish their goals\")
+    System(system, \"System Name\", \"Provides features X, Y, and Z\")
+    System_Ext(external1, \"External System 1\", \"Provides service A\")
+    System_Ext(external2, \"External System 2\", \"Provides service B\")
+    SystemDb(externalDb, \"External Database\", \"Stores data\")
 
-    Rel(user, system, "Uses")
-    Rel(system, external1, "Uses", "API")
-    Rel(system, external2, "Sends events to")
-    Rel(system, externalDb, "Reads from and writes to")
+    Rel(user, system, \"Uses\")
+    Rel(system, external1, \"Uses\", \"API\")
+    Rel(system, external2, \"Sends events to\")
+    Rel(system, externalDb, \"Reads from and writes to\")
 ```
 
 **Key Principles** (from [c4model.com](https://c4model.com/diagrams/system-context)):
@@ -205,11 +205,11 @@ C4Context
 
 ## Example Interactions
 
-- "Create C4 Context-level documentation for the system"
-- "Identify all personas and create user journey maps for key features"
-- "Document external systems and create a system context diagram"
-- "Analyze system documentation and create comprehensive context documentation"
-- "Map user journeys for all key features including programmatic users"
+- \"Create C4 Context-level documentation for the system\"
+- \"Identify all personas and create user journey maps for key features\"
+- \"Document external systems and create a system context diagram\"
+- \"Analyze system documentation and create comprehensive context documentation\"
+- \"Map user journeys for all key features including programmatic users\"
 
 ## Key Distinctions
 

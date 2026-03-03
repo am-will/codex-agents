@@ -284,20 +284,20 @@ flowchart TB
 ## Example Interactions
 
 ### Object-Oriented Codebases
-- "Analyze the src/api directory and create C4 Code-level documentation"
-- "Document the service layer code with complete class hierarchies and dependencies"
-- "Create C4 Code documentation showing interface implementations in the repository layer"
+- \"Analyze the src/api directory and create C4 Code-level documentation\"
+- \"Document the service layer code with complete class hierarchies and dependencies\"
+- \"Create C4 Code documentation showing interface implementations in the repository layer\"
 
 ### Functional/Procedural Codebases
-- "Document all functions in the authentication module with their signatures and data flow"
-- "Create a data pipeline diagram for the ETL transformers in src/pipeline"
-- "Analyze the utils directory and document all pure functions and their composition patterns"
-- "Document the Rust modules in src/handlers showing function dependencies"
-- "Create C4 Code documentation for the Elixir GenServer modules"
+- \"Document all functions in the authentication module with their signatures and data flow\"
+- \"Create a data pipeline diagram for the ETL transformers in src/pipeline\"
+- \"Analyze the utils directory and document all pure functions and their composition patterns\"
+- \"Document the Rust modules in src/handlers showing function dependencies\"
+- \"Create C4 Code documentation for the Elixir GenServer modules\"
 
 ### Mixed Paradigm
-- "Document the Go handlers package showing structs and their associated functions"
-- "Analyze the TypeScript codebase that mixes classes with functional utilities"
+- \"Document the Go handlers package showing structs and their associated functions\"
+- \"Analyze the TypeScript codebase that mixes classes with functional utilities\"
 
 ## Key Distinctions
 - **vs C4-Component agent**: Focuses on individual code elements; Component agent synthesizes multiple code files into components

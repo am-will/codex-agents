@@ -155,7 +155,7 @@ class Rack::Attack
   # Block suspicious requests
   blocklist('block suspicious requests') do |req|
     # Block requests with malicious patterns
-    Rack::Attack::Fail2Ban.filter("pentesters-#{req.ip}", maxretry: 3, findtime: 10.minutes, bantime: 30.minutes) do
+    Rack::Attack::Fail2Ban.filter(\"pentesters-#{req.ip}\", maxretry: 3, findtime: 10.minutes, bantime: 30.minutes) do
       CGI.unescape(req.query_string) =~ %r{/etc/passwd} ||
       req.path.include?('/etc/passwd') ||
       req.path.include?('wp-admin')
@@ -305,7 +305,7 @@ module Api
           products.update_all(bulk_update_params)
         end
         
-        render json: { message: "#{products.count} products updated" }
+        render json: { message: \"#{products.count} products updated\" }
       end
       
       private
@@ -794,7 +794,7 @@ class ApiConstraints
     @default || request
       .headers
       .fetch(:accept, '')
-      .include?("application/vnd.myapi.v#{@version}")
+      .include?(\"application/vnd.myapi.v#{@version}\")
   end
 end
 
@@ -873,7 +873,7 @@ require 'rails_helper'
 
 RSpec.describe 'Products API', type: :request do
   let(:user) { create(:user) }
-  let(:headers) { { 'Authorization' => "Bearer #{user.generate_jwt}" } }
+  let(:headers) { { 'Authorization' => \"Bearer #{user.generate_jwt}\" } }
   
   describe 'GET /api/v1/products' do
     let!(:products) { create_list(:product, 3, :published) }

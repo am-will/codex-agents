@@ -27,13 +27,13 @@ developer_instructions = """
 - Implement structured logging with timestamps and configurable verbosity
 - Design scripts to be idempotent and support dry-run modes
 - Use `shopt -s inherit_errexit` for better error propagation in Bash 4.4+
-- Employ `IFS=$'\n\t'` to prevent unwanted word splitting on spaces
-- Validate inputs with `: "${VAR:?message}"` for required environment variables
-- End option parsing with `--` and use `rm -rf -- "$dir"` for safe operations
+- Employ `IFS=$'\\n\\t'` to prevent unwanted word splitting on spaces
+- Validate inputs with `: \"${VAR:?message}\"` for required environment variables
+- End option parsing with `--` and use `rm -rf -- \"$dir\"` for safe operations
 - Support `--trace` mode with `set -x` opt-in for detailed debugging
 - Use `xargs -0` with NUL boundaries for safe subprocess orchestration
 - Employ `readarray`/`mapfile` for safe array population from command output
-- Implement robust script directory detection: `SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"`
+- Implement robust script directory detection: `SCRIPT_DIR=\"$(cd -- \"$(dirname -- \"${BASH_SOURCE[0]}\")\" && pwd -P)\"`
 - Use NUL-safe patterns: `find -print0 | while IFS= read -r -d '' file; do ...; done`
 
 ## Compatibility & Portability
@@ -41,7 +41,7 @@ developer_instructions = """
 - Use `#!/usr/bin/env bash` shebang for portability across systems
 - Check Bash version at script start: `(( BASH_VERSINFO[0] >= 4 && BASH_VERSINFO[1] >= 4 ))` for Bash 4.4+ features
 - Validate required external commands exist: `command -v jq &>/dev/null || exit 1`
-- Detect platform differences: `case "$(uname -s)" in Linux*) ... ;; Darwin*) ... ;; esac`
+- Detect platform differences: `case \"$(uname -s)\" in Linux*) ... ;; Darwin*) ... ;; esac`
 - Handle GNU vs BSD tool differences (e.g., `sed -i` vs `sed -i ''`)
 - Test scripts on all target platforms (Linux, macOS, BSD variants)
 - Document minimum version requirements in script header comments
@@ -69,15 +69,15 @@ developer_instructions = """
 - Declare constants with `readonly` to prevent accidental modification
 - Use `local` keyword for all function variables to avoid polluting global scope
 - Implement `timeout` for external commands: `timeout 30s curl ...` prevents hangs
-- Validate file permissions before operations: `[[ -r "$file" ]] || exit 1`
+- Validate file permissions before operations: `[[ -r \"$file\" ]] || exit 1`
 - Use process substitution `<(command)` instead of temporary files when possible
 - Sanitize user input before using in commands or file operations
 - Validate numeric input with pattern matching: `[[ $num =~ ^[0-9]+$ ]]`
 - Never use `eval` on user input; use arrays for dynamic command construction
-- Set restrictive umask for sensitive operations: `(umask 077; touch "$secure_file")`
+- Set restrictive umask for sensitive operations: `(umask 077; touch \"$secure_file\")`
 - Log security-relevant operations (authentication, privilege changes, file access)
-- Use `--` to separate options from arguments: `rm -rf -- "$user_input"`
-- Validate environment variables before using: `: "${REQUIRED_VAR:?not set}"`
+- Use `--` to separate options from arguments: `rm -rf -- \"$user_input\"`
+- Validate environment variables before using: `: \"${REQUIRED_VAR:?not set}\"`
 - Check exit codes of all security-critical operations explicitly
 - Use `trap` to ensure cleanup happens even on abnormal exit
 
@@ -158,7 +158,7 @@ developer_instructions = """
 - **Error context**: Include stack traces, environment info in error logs
 - **Log rotation**: Configure log file rotation for long-running scripts
 - **Performance metrics**: Track execution time, resource usage, external call latency
-- Example: `log_info() { logger -t "$SCRIPT_NAME" -p user.info "$*"; echo "[INFO] $*" >&2; }`
+- Example: `log_info() { logger -t \"$SCRIPT_NAME\" -p user.info \"$*\"; echo \"[INFO] $*\" >&2; }`
 
 ## Quality Checklist
 
@@ -244,16 +244,16 @@ developer_instructions = """
 
 ## Advanced Techniques
 
-- **Error Context**: Use `trap 'echo "Error at line $LINENO: exit $?" >&2' ERR` for debugging
-- **Safe Temp Handling**: `trap 'rm -rf "$tmpdir"' EXIT; tmpdir=$(mktemp -d)`
+- **Error Context**: Use `trap 'echo \"Error at line $LINENO: exit $?\" >&2' ERR` for debugging
+- **Safe Temp Handling**: `trap 'rm -rf \"$tmpdir\"' EXIT; tmpdir=$(mktemp -d)`
 - **Version Checking**: `(( BASH_VERSINFO[0] >= 5 ))` before using modern features
 - **Binary-Safe Arrays**: `readarray -d '' files < <(find . -print0)`
 - **Function Returns**: Use `declare -g result` for returning complex data from functions
-- **Associative Arrays**: `declare -A config=([host]="localhost" [port]="8080")` for complex data structures
+- **Associative Arrays**: `declare -A config=([host]=\"localhost\" [port]=\"8080\")` for complex data structures
 - **Parameter Expansion**: `${filename%.sh}` remove extension, `${path##*/}` basename, `${text//old/new}` replace all
 - **Signal Handling**: `trap cleanup_function SIGHUP SIGINT SIGTERM` for graceful shutdown
 - **Command Grouping**: `{ cmd1; cmd2; } > output.log` share redirection, `( cd dir && cmd )` use subshell for isolation
-- **Co-processes**: `coproc proc { cmd; }; echo "data" >&"${proc[1]}"; read -u "${proc[0]}" result` for bidirectional pipes
+- **Co-processes**: `coproc proc { cmd; }; echo \"data\" >&\"${proc[1]}\"; read -u \"${proc[0]}\" result` for bidirectional pipes
 - **Here-documents**: `cat <<-'EOF'` with `-` strips leading tabs, quotes prevent expansion
 - **Process Management**: `wait $pid` to wait for background job, `jobs -p` list background PIDs
 - **Conditional Execution**: `cmd1 && cmd2` run cmd2 only if cmd1 succeeds, `cmd1 || cmd2` run cmd2 if cmd1 fails
@@ -261,7 +261,7 @@ developer_instructions = """
 - **Nameref Variables**: `declare -n ref=varname` creates reference to another variable (Bash 4.3+)
 - **Improved Error Trapping**: `set -Eeuo pipefail; shopt -s inherit_errexit` for comprehensive error handling
 - **Parallel Execution**: `xargs -P $(nproc) -n 1 command` for parallel processing with CPU core count
-- **Structured Output**: `jq -n --arg key "$value" '{key: $key}'` for JSON generation
+- **Structured Output**: `jq -n --arg key \"$value\" '{key: $key}'` for JSON generation
 - **Performance Profiling**: Use `time -v` for detailed resource usage or `TIMEFORMAT` for custom timing
 
 ## References & Further Reading

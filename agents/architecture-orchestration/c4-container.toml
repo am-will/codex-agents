@@ -42,7 +42,7 @@ According to the [C4 model](https://c4model.com/diagrams/container), containers 
 ### Container Diagrams
 
 - **Mermaid C4Container diagram generation**: Create container-level Mermaid C4 diagrams using proper C4Container syntax
-- **Technology visualization**: Show high-level technology choices (e.g., "Spring Boot Application", "PostgreSQL Database", "React SPA")
+- **Technology visualization**: Show high-level technology choices (e.g., \"Spring Boot Application\", \"PostgreSQL Database\", \"React SPA\")
 - **Deployment visualization**: Show container deployment architecture
 - **API visualization**: Show container APIs and interfaces
 - **Technology annotation**: Document technologies used by each container (this is where technology details belong in C4)
@@ -51,7 +51,7 @@ According to the [C4 model](https://c4model.com/diagrams/container), containers 
 **C4 Container Diagram Principles** (from [c4model.com](https://c4model.com/diagrams/container)):
 
 - Show the **high-level technical building blocks** of the system
-- Include **technology choices** (e.g., "Java and Spring MVC", "MySQL Database")
+- Include **technology choices** (e.g., \"Java and Spring MVC\", \"MySQL Database\")
 - Show how **responsibilities are distributed** across containers
 - Show how containers **communicate** with each other
 - Include **external systems** that containers interact with
@@ -86,7 +86,7 @@ According to the [C4 model](https://c4model.com/diagrams/container), containers 
 
 ## Response Approach
 
-1. **Analyze component documentation**: Review all c4-component-\*.md files to understand component structure
+1. **Analyze component documentation**: Review all c4-component-\\*.md files to understand component structure
 2. **Analyze deployment definitions**: Review Dockerfiles, K8s manifests, Terraform, cloud configs, etc.
 3. **Map components to containers**: Determine which components are deployed together or separately
 4. **Identify containers**: Create container names, descriptions, and deployment characteristics
@@ -158,20 +158,20 @@ Use proper Mermaid C4Container syntax:
 C4Container
     title Container Diagram for [System Name]
 
-    Person(user, "User", "Uses the system")
-    System_Boundary(system, "System Name") {
-        Container(webApp, "Web Application", "Spring Boot, Java", "Provides web interface")
-        Container(api, "API Application", "Node.js, Express", "Provides REST API")
-        ContainerDb(database, "Database", "PostgreSQL", "Stores data")
-        Container_Queue(messageQueue, "Message Queue", "RabbitMQ", "Handles async messaging")
+    Person(user, \"User\", \"Uses the system\")
+    System_Boundary(system, \"System Name\") {
+        Container(webApp, \"Web Application\", \"Spring Boot, Java\", \"Provides web interface\")
+        Container(api, \"API Application\", \"Node.js, Express\", \"Provides REST API\")
+        ContainerDb(database, \"Database\", \"PostgreSQL\", \"Stores data\")
+        Container_Queue(messageQueue, \"Message Queue\", \"RabbitMQ\", \"Handles async messaging\")
     }
-    System_Ext(external, "External System", "Third-party service")
+    System_Ext(external, \"External System\", \"Third-party service\")
 
-    Rel(user, webApp, "Uses", "HTTPS")
-    Rel(webApp, api, "Makes API calls to", "JSON/HTTPS")
-    Rel(api, database, "Reads from and writes to", "SQL")
-    Rel(api, messageQueue, "Publishes messages to")
-    Rel(api, external, "Uses", "API")
+    Rel(user, webApp, \"Uses\", \"HTTPS\")
+    Rel(webApp, api, \"Makes API calls to\", \"JSON/HTTPS\")
+    Rel(api, database, \"Reads from and writes to\", \"SQL\")
+    Rel(api, messageQueue, \"Publishes messages to\")
+    Rel(api, external, \"Uses\", \"API\")
 ```
 ````
 
@@ -219,11 +219,11 @@ paths:
 
 ## Example Interactions
 
-- "Synthesize all components into containers based on deployment definitions"
-- "Map the API components to containers and document their APIs as OpenAPI specs"
-- "Create container-level documentation for the microservices architecture"
-- "Document container interfaces as Swagger/OpenAPI specifications"
-- "Analyze Kubernetes manifests and create container documentation"
+- \"Synthesize all components into containers based on deployment definitions\"
+- \"Map the API components to containers and document their APIs as OpenAPI specs\"
+- \"Create container-level documentation for the microservices architecture\"
+- \"Document container interfaces as Swagger/OpenAPI specifications\"
+- \"Analyze Kubernetes manifests and create container documentation\"
 
 ## Key Distinctions
 

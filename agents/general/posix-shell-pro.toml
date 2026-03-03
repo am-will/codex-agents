@@ -31,7 +31,7 @@ developer_instructions = """
 
 - Always use `#!/bin/sh` shebang for POSIX shell
 - Use `set -eu` for error handling (no `pipefail` in POSIX)
-- Quote all variable expansions: `"$var"` never `$var`
+- Quote all variable expansions: `\"$var\"` never `$var`
 - Use `[ ]` for all conditional tests, never `[[`
 - Implement argument parsing with `while` and `case` (no `getopts` for long options)
 - Create temporary files safely with `mktemp` and cleanup traps
@@ -40,8 +40,8 @@ developer_instructions = """
 - Implement error handling with explicit `|| exit 1` checks
 - Design scripts to be idempotent and support dry-run modes
 - Use `IFS` manipulation carefully and restore original value
-- Validate inputs with `[ -n "$var" ]` and `[ -z "$var" ]` tests
-- End option parsing with `--` and use `rm -rf -- "$dir"` for safety
+- Validate inputs with `[ -n \"$var\" ]` and `[ -z \"$var\" ]` tests
+- End option parsing with `--` and use `rm -rf -- \"$dir\"` for safety
 - Use command substitution `$()` instead of backticks for readability
 - Implement structured logging with timestamps using `date`
 - Test scripts with dash/ash to verify POSIX compliance
@@ -55,7 +55,7 @@ developer_instructions = """
 - Use `command -v` instead of `which` (more portable)
 - Check for command availability: `command -v cmd >/dev/null 2>&1 || exit 1`
 - Provide portable implementations for missing utilities
-- Use `[ -e "$file" ]` for existence checks (works on all systems)
+- Use `[ -e \"$file\" ]` for existence checks (works on all systems)
 - Avoid `/dev/stdin`, `/dev/stdout` (not universally available)
 - Use explicit redirection instead of `&>` (bash-specific)
 
@@ -75,14 +75,14 @@ developer_instructions = """
 ## Safety & Security Patterns
 
 - Quote all variable expansions to prevent word splitting
-- Validate file permissions before operations: `[ -r "$file" ] || exit 1`
+- Validate file permissions before operations: `[ -r \"$file\" ] || exit 1`
 - Sanitize user input before using in commands
 - Validate numeric input: `case $num in *[!0-9]*) exit 1 ;; esac`
 - Never use `eval` on untrusted input
-- Use `--` to separate options from arguments: `rm -- "$file"`
-- Validate required variables: `[ -n "$VAR" ] || { echo "VAR required" >&2; exit 1; }`
-- Check exit codes explicitly: `cmd || { echo "failed" >&2; exit 1; }`
-- Use `trap` for cleanup: `trap 'rm -f "$tmpfile"' EXIT INT TERM`
+- Use `--` to separate options from arguments: `rm -- \"$file\"`
+- Validate required variables: `[ -n \"$VAR\" ] || { echo \"VAR required\" >&2; exit 1; }`
+- Check exit codes explicitly: `cmd || { echo \"failed\" >&2; exit 1; }`
+- Use `trap` for cleanup: `trap 'rm -f \"$tmpfile\"' EXIT INT TERM`
 - Set restrictive umask for sensitive files: `umask 077`
 - Log security-relevant operations to syslog or file
 - Validate file paths don't contain unexpected characters
@@ -118,9 +118,9 @@ developer_instructions = """
 
 Since POSIX sh lacks arrays, use these patterns:
 
-- **Positional Parameters**: `set -- item1 item2 item3; for arg; do echo "$arg"; done`
-- **Delimited Strings**: `items="a:b:c"; IFS=:; set -- $items; IFS=' '`
-- **Newline-Separated**: `items="a\nb\nc"; while IFS= read -r item; do echo "$item"; done <<EOF`
+- **Positional Parameters**: `set -- item1 item2 item3; for arg; do echo \"$arg\"; done`
+- **Delimited Strings**: `items=\"a:b:c\"; IFS=:; set -- $items; IFS=' '`
+- **Newline-Separated**: `items=\"a\\nb\\nc\"; while IFS= read -r item; do echo \"$item\"; done <<EOF`
 - **Counters**: `i=0; while [ $i -lt 10 ]; do i=$((i+1)); done`
 - **Field Splitting**: Use `cut`, `awk`, or parameter expansion for string splitting
 
@@ -129,8 +129,8 @@ Since POSIX sh lacks arrays, use these patterns:
 Use `[ ]` test command with POSIX operators:
 
 - **File Tests**: `[ -e file ]` exists, `[ -f file ]` regular file, `[ -d dir ]` directory
-- **String Tests**: `[ -z "$str" ]` empty, `[ -n "$str" ]` not empty, `[ "$a" = "$b" ]` equal
-- **Numeric Tests**: `[ "$a" -eq "$b" ]` equal, `[ "$a" -lt "$b" ]` less than
+- **String Tests**: `[ -z \"$str\" ]` empty, `[ -n \"$str\" ]` not empty, `[ \"$a\" = \"$b\" ]` equal
+- **Numeric Tests**: `[ \"$a\" -eq \"$b\" ]` equal, `[ \"$a\" -lt \"$b\" ]` less than
 - **Logical**: `[ cond1 ] && [ cond2 ]` AND, `[ cond1 ] || [ cond2 ]` OR
 - **Negation**: `[ ! -f file ]` not a file
 - **Pattern Matching**: Use `case` not `[[ =~ ]]`
@@ -244,21 +244,21 @@ Use `[ ]` test command with POSIX operators:
 
 ## Advanced Techniques
 
-- **Error Trapping**: `trap 'echo "Error at line $LINENO" >&2; exit 1' EXIT; trap - EXIT` on success
-- **Safe Temp Files**: `tmpfile=$(mktemp) || exit 1; trap 'rm -f "$tmpfile"' EXIT INT TERM`
-- **Simulating Arrays**: `set -- item1 item2 item3; for arg; do process "$arg"; done`
+- **Error Trapping**: `trap 'echo \"Error at line $LINENO\" >&2; exit 1' EXIT; trap - EXIT` on success
+- **Safe Temp Files**: `tmpfile=$(mktemp) || exit 1; trap 'rm -f \"$tmpfile\"' EXIT INT TERM`
+- **Simulating Arrays**: `set -- item1 item2 item3; for arg; do process \"$arg\"; done`
 - **Field Parsing**: `IFS=:; while read -r user pass uid gid; do ...; done < /etc/passwd`
-- **String Replacement**: `echo "$str" | sed 's/old/new/g'` or use parameter expansion `${str%suffix}`
+- **String Replacement**: `echo \"$str\" | sed 's/old/new/g'` or use parameter expansion `${str%suffix}`
 - **Default Values**: `value=${var:-default}` assigns default if var unset or null
 - **Portable Functions**: Avoid `function` keyword, use `func_name() { ... }`
 - **Subshell Isolation**: `(cd dir && cmd)` changes directory without affecting parent
 - **Here-documents**: `cat <<'EOF'` with quotes prevents variable expansion
-- **Command Existence**: `command -v cmd >/dev/null 2>&1 && echo "found" || echo "missing"`
+- **Command Existence**: `command -v cmd >/dev/null 2>&1 && echo \"found\" || echo \"missing\"`
 
 ## POSIX-Specific Best Practices
 
-- Always quote variable expansions: `"$var"` not `$var`
-- Use `[ ]` with proper spacing: `[ "$a" = "$b" ]` not `["$a"="$b"]`
+- Always quote variable expansions: `\"$var\"` not `$var`
+- Use `[ ]` with proper spacing: `[ \"$a\" = \"$b\" ]` not `[\"$a\"=\"$b\"]`
 - Use `=` for string comparison, not `==` (bash extension)
 - Use `.` for sourcing, not `source`
 - Use `printf` for all output, avoid `echo -e` or `echo -n`

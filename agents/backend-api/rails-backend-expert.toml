@@ -209,8 +209,8 @@ class Product < ApplicationRecord
   end
   
   def invalidate_cache
-    Rails.cache.delete("product/#{id}")
-    Rails.cache.delete_matched("products/category/#{category_id}/*")
+    Rails.cache.delete(\"product/#{id}\")
+    Rails.cache.delete_matched(\"products/category/#{category_id}/*\")
   end
   
   def low_stock_threshold
@@ -331,7 +331,7 @@ class OrderService
   def validate_inventory
     cart_items.each do |item|
       if item.quantity > item.product.stock
-        errors.add(:base, "#{item.product.name} has insufficient stock")
+        errors.add(:base, \"#{item.product.name} has insufficient stock\")
       end
     end
   end
@@ -435,7 +435,7 @@ class DailyReportJob < ApplicationJob
     end
     
     Rails.cache.write(
-      "reports/daily/#{date}",
+      \"reports/daily/#{date}\",
       report.summary,
       expires_in: 30.days
     )
@@ -563,7 +563,7 @@ class UserRegistrationForm
   
   def company_attributes
     {
-      name: company_name.presence || "#{first_name}'s Company"
+      name: company_name.presence || \"#{first_name}'s Company\"
     }
   end
   
@@ -581,7 +581,7 @@ end
 class OrderChannel < ApplicationCable::Channel
   def subscribed
     if current_user.admin?
-      stream_from "orders:all"
+      stream_from \"orders:all\"
     else
       stream_for current_user
     end
@@ -668,15 +668,15 @@ end
 
 # app/views/products/_product.html.erb
 <% cache product do %>
-  <div class="product">
+  <div class=\"product\">
     <h3><%= product.name %></h3>
     <p><%= product.description %></p>
     
     <% cache product.category do %>
-      <span class="category"><%= product.category_name %></span>
+      <span class=\"category\"><%= product.category_name %></span>
     <% end %>
     
-    <div class="price">
+    <div class=\"price\">
       <%= number_to_currency(product.final_price) %>
     </div>
   </div>
@@ -860,7 +860,7 @@ class AddIndexesForPerformance < ActiveRecord::Migration[7.0]
     add_index :products, [:price, :published]
     
     # Partial indexes
-    add_index :orders, :user_id, where: "status = 'pending'"
+    add_index :orders, :user_id, where: \"status = 'pending'\"
     
     # GIN index for full-text search
     enable_extension 'pg_trgm'

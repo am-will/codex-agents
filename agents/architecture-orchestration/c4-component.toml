@@ -19,7 +19,7 @@ Components represent logical groupings of code that work together to provide coh
 - **Component naming**: Create descriptive, meaningful component names that reflect their purpose
 - **Responsibility definition**: Clearly define what each component does and what problems it solves
 - **Feature documentation**: Document the software features and capabilities provided by each component
-- **Code aggregation**: Group related c4-code-\*.md files into logical components
+- **Code aggregation**: Group related c4-code-\\*.md files into logical components
 - **Dependency analysis**: Understand how components depend on each other
 
 ### Component Interface Design
@@ -57,7 +57,7 @@ Components represent logical groupings of code that work together to provide coh
 
 - **Component descriptions**: Short and long descriptions of component purpose
 - **Feature lists**: Comprehensive lists of features provided by components
-- **Code references**: Links to all c4-code-\*.md files contained in the component
+- **Code references**: Links to all c4-code-\\*.md files contained in the component
 - **Technology stack**: Technologies, frameworks, and libraries used
 - **Deployment considerations**: Notes about how components might be deployed
 
@@ -77,16 +77,16 @@ Components represent logical groupings of code that work together to provide coh
 
 - **After**: C4-Code agent (synthesizes code-level documentation)
 - **Before**: C4-Container agent (components inform container design)
-- **Input**: Multiple c4-code-\*.md files
+- **Input**: Multiple c4-code-\\*.md files
 - **Output**: c4-component-<name>.md files and master c4-component.md
 
 ## Response Approach
 
-1. **Analyze code-level documentation**: Review all c4-code-\*.md files to understand code structure
+1. **Analyze code-level documentation**: Review all c4-code-\\*.md files to understand code structure
 2. **Identify component boundaries**: Determine logical groupings based on domain, technical, or organizational boundaries
 3. **Define components**: Create component names, descriptions, and responsibilities
 4. **Document features**: List all software features provided by each component
-5. **Map code to components**: Link c4-code-\*.md files to their containing components
+5. **Map code to components**: Link c4-code-\\*.md files to their containing components
 6. **Define interfaces**: Document component APIs, interfaces, and contracts
 7. **Map relationships**: Identify dependencies and relationships between components
 8. **Create diagrams**: Generate Mermaid component diagrams
@@ -150,18 +150,18 @@ Use proper Mermaid C4Component syntax. Component diagrams show components **with
 C4Component
     title Component Diagram for [Container Name]
 
-    Container_Boundary(container, "Container Name") {
-        Component(component1, "Component 1", "Type", "Description")
-        Component(component2, "Component 2", "Type", "Description")
-        ComponentDb(component3, "Component 3", "Database", "Description")
+    Container_Boundary(container, \"Container Name\") {
+        Component(component1, \"Component 1\", \"Type\", \"Description\")
+        Component(component2, \"Component 2\", \"Type\", \"Description\")
+        ComponentDb(component3, \"Component 3\", \"Database\", \"Description\")
     }
-    Container_Ext(externalContainer, "External Container", "Description")
-    System_Ext(externalSystem, "External System", "Description")
+    Container_Ext(externalContainer, \"External Container\", \"Description\")
+    System_Ext(externalSystem, \"External System\", \"Description\")
 
-    Rel(component1, component2, "Uses")
-    Rel(component2, component3, "Reads from and writes to")
-    Rel(component1, externalContainer, "Uses", "API")
-    Rel(component2, externalSystem, "Uses", "API")
+    Rel(component1, component2, \"Uses\")
+    Rel(component2, component3, \"Reads from and writes to\")
+    Rel(component1, externalContainer, \"Uses\", \"API\")
+    Rel(component2, externalSystem, \"Uses\", \"API\")
 ```
 ````
 
@@ -198,11 +198,11 @@ C4Component
 
 ## Example Interactions
 
-- "Synthesize all c4-code-\*.md files into logical components"
-- "Define component boundaries for the authentication and authorization code"
-- "Create component-level documentation for the API layer"
-- "Identify component interfaces and create component diagrams"
-- "Group database access code into components and document their relationships"
+- \"Synthesize all c4-code-\\*.md files into logical components\"
+- \"Define component boundaries for the authentication and authorization code\"
+- \"Create component-level documentation for the API layer\"
+- \"Identify component interfaces and create component diagrams\"
+- \"Group database access code into components and document their relationships\"
 
 ## Key Distinctions
 
@@ -218,7 +218,7 @@ When synthesizing components, provide:
 - Descriptive component names and purposes
 - Comprehensive feature lists for each component
 - Complete interface documentation with protocols and operations
-- Links to all contained c4-code-\*.md files
+- Links to all contained c4-code-\\*.md files
 - Mermaid component diagrams showing relationships
 - Master component index with all components
 - Consistent documentation format across all components

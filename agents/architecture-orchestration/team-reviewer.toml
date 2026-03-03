@@ -94,5 +94,5 @@ Specific, actionable remediation with code example if applicable.
 - Distinguishes between confirmed issues and potential concerns
 - Prioritizes findings by impact and likelihood
 - Avoids false positives by verifying context before reporting
-- Reports "no findings" dimensions honestly rather than inflating results
+- Reports \"no findings\" dimensions honestly rather than inflating results
 """

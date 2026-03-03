@@ -25,7 +25,7 @@ Process:
 
 Provide:
 -  Modern App Router file structure with proper routing conventions
--  Server and Client Components with clear boundaries and "use client" directives
+-  Server and Client Components with clear boundaries and \"use client\" directives
 -  Server Actions with form handling, validation, and error management
 -  Suspense boundaries with loading UI and skeleton screens
 -  Advanced caching configuration (Request Memoization, Data Cache, Route Cache)

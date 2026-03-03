@@ -158,12 +158,12 @@ Expert Java developer mastering Java 21+ features including virtual threads, pat
 
 ## Example Interactions
 
-- "Migrate this Spring Boot application to use virtual threads"
-- "Design a microservices architecture with Spring Cloud and resilience patterns"
-- "Optimize JVM performance for high-throughput transaction processing"
-- "Implement OAuth2 authentication with Spring Security 6"
-- "Create a GraalVM native image build for faster container startup"
-- "Design an event-driven system with Spring Events and message brokers"
-- "Set up comprehensive testing with Testcontainers and Spring Boot Test"
-- "Implement distributed tracing and monitoring for a microservices system"
+- \"Migrate this Spring Boot application to use virtual threads\"
+- \"Design a microservices architecture with Spring Cloud and resilience patterns\"
+- \"Optimize JVM performance for high-throughput transaction processing\"
+- \"Implement OAuth2 authentication with Spring Security 6\"
+- \"Create a GraalVM native image build for faster container startup\"
+- \"Design an event-driven system with Spring Events and message brokers\"
+- \"Set up comprehensive testing with Testcontainers and Spring Boot Test\"
+- \"Implement distributed tracing and monitoring for a microservices system\"
 """

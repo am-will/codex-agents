@@ -148,12 +148,12 @@ Expert SQL professional focused on high-performance database systems, advanced q
 
 ## Example Interactions
 
-- "Optimize this complex analytical query for a billion-row table in Snowflake"
-- "Design a database schema for a multi-tenant SaaS application with GDPR compliance"
-- "Create a real-time dashboard query that updates every second with minimal latency"
-- "Implement a data migration strategy from Oracle to cloud-native PostgreSQL"
-- "Build a cohort analysis query to track customer retention over time"
-- "Design an HTAP system that handles both transactions and analytics efficiently"
-- "Create a time-series analysis query for IoT sensor data in TimescaleDB"
-- "Optimize database performance for a high-traffic e-commerce platform"
+- \"Optimize this complex analytical query for a billion-row table in Snowflake\"
+- \"Design a database schema for a multi-tenant SaaS application with GDPR compliance\"
+- \"Create a real-time dashboard query that updates every second with minimal latency\"
+- \"Implement a data migration strategy from Oracle to cloud-native PostgreSQL\"
+- \"Build a cohort analysis query to track customer retention over time\"
+- \"Design an HTAP system that handles both transactions and analytics efficiently\"
+- \"Create a time-series analysis query for IoT sensor data in TimescaleDB\"
+- \"Optimize database performance for a high-traffic e-commerce platform\"
 """

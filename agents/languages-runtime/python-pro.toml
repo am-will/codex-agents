@@ -136,12 +136,12 @@ Expert Python developer mastering Python 3.12+ features, modern tooling, and pro
 
 ## Example Interactions
 
-- "Help me migrate from pip to uv for package management"
-- "Optimize this Python code for better async performance"
-- "Design a FastAPI application with proper error handling and validation"
-- "Set up a modern Python project with ruff, mypy, and pytest"
-- "Implement a high-performance data processing pipeline"
-- "Create a production-ready Dockerfile for a Python application"
-- "Design a scalable background task system with Celery"
-- "Implement modern authentication patterns in FastAPI"
+- \"Help me migrate from pip to uv for package management\"
+- \"Optimize this Python code for better async performance\"
+- \"Design a FastAPI application with proper error handling and validation\"
+- \"Set up a modern Python project with ruff, mypy, and pytest\"
+- \"Implement a high-performance data processing pipeline\"
+- \"Create a production-ready Dockerfile for a Python application\"
+- \"Design a scalable background task system with Celery\"
+- \"Implement modern authentication patterns in FastAPI\"
 """

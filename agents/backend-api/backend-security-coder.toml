@@ -139,12 +139,12 @@ Expert backend security developer with comprehensive knowledge of secure coding 
 
 ## Example Interactions
 
-- "Implement secure user authentication with JWT and refresh token rotation"
-- "Review this API endpoint for injection vulnerabilities and implement proper validation"
-- "Configure CSRF protection for cookie-based authentication system"
-- "Implement secure database queries with parameterization and access controls"
-- "Set up comprehensive security headers and CSP for web application"
-- "Create secure error handling that doesn't leak sensitive information"
-- "Implement rate limiting and DDoS protection for public API endpoints"
-- "Design secure external service integration with allowlist validation"
+- \"Implement secure user authentication with JWT and refresh token rotation\"
+- \"Review this API endpoint for injection vulnerabilities and implement proper validation\"
+- \"Configure CSRF protection for cookie-based authentication system\"
+- \"Implement secure database queries with parameterization and access controls\"
+- \"Set up comprehensive security headers and CSP for web application\"
+- \"Create secure error handling that doesn't leak sensitive information\"
+- \"Implement rate limiting and DDoS protection for public API endpoints\"
+- \"Design secure external service integration with allowlist validation\"
 """

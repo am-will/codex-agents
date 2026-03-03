@@ -173,56 +173,56 @@ export default defineNuxtConfig({
   <div>
     <Head>
       <Title>{{ product.name }}</Title>
-      <Meta name="description" :content="product.description" />
-      <Meta property="og:title" :content="product.name" />
-      <Meta property="og:description" :content="product.description" />
-      <Meta property="og:image" :content="product.image" />
+      <Meta name=\"description\" :content=\"product.description\" />
+      <Meta property=\"og:title\" :content=\"product.name\" />
+      <Meta property=\"og:description\" :content=\"product.description\" />
+      <Meta property=\"og:image\" :content=\"product.image\" />
     </Head>
     
     <NuxtLayout>
-      <div class="container mx-auto px-4 py-8">
-        <NuxtLink to="/products" class="text-blue-600 hover:underline mb-4 inline-block">
+      <div class=\"container mx-auto px-4 py-8\">
+        <NuxtLink to=\"/products\" class=\"text-blue-600 hover:underline mb-4 inline-block\">
           ← Back to products
         </NuxtLink>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class=\"grid grid-cols-1 md:grid-cols-2 gap-8\">
           <div>
             <NuxtImg 
-              :src="product.image" 
-              :alt="product.name"
-              class="w-full rounded-lg shadow-lg"
-              loading="lazy"
-              :width="600"
-              :height="600"
+              :src=\"product.image\" 
+              :alt=\"product.name\"
+              class=\"w-full rounded-lg shadow-lg\"
+              loading=\"lazy\"
+              :width=\"600\"
+              :height=\"600\"
             />
           </div>
           
           <div>
-            <h1 class="text-3xl font-bold mb-4">{{ product.name }}</h1>
-            <p class="text-gray-600 mb-6">{{ product.description }}</p>
+            <h1 class=\"text-3xl font-bold mb-4\">{{ product.name }}</h1>
+            <p class=\"text-gray-600 mb-6\">{{ product.description }}</p>
             
-            <div class="mb-6">
-              <span class="text-2xl font-bold">${{ product.price }}</span>
-              <span v-if="product.comparePrice" class="ml-2 text-gray-500 line-through">
+            <div class=\"mb-6\">
+              <span class=\"text-2xl font-bold\">${{ product.price }}</span>
+              <span v-if=\"product.comparePrice\" class=\"ml-2 text-gray-500 line-through\">
                 ${{ product.comparePrice }}
               </span>
             </div>
             
-            <div class="flex items-center gap-4 mb-6">
-              <label for="quantity" class="font-medium">Quantity:</label>
+            <div class=\"flex items-center gap-4 mb-6\">
+              <label for=\"quantity\" class=\"font-medium\">Quantity:</label>
               <input 
-                id="quantity"
-                v-model.number="quantity" 
-                type="number" 
-                min="1" 
-                class="border rounded px-3 py-2 w-20"
+                id=\"quantity\"
+                v-model.number=\"quantity\" 
+                type=\"number\" 
+                min=\"1\" 
+                class=\"border rounded px-3 py-2 w-20\"
               >
             </div>
             
             <button 
-              @click="addToCart"
-              class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
-              :disabled="loading"
+              @click=\"addToCart\"
+              class=\"bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition\"
+              :disabled=\"loading\"
             >
               {{ loading ? 'Adding...' : 'Add to Cart' }}
             </button>
@@ -230,13 +230,13 @@ export default defineNuxtConfig({
         </div>
         
         <!-- Related Products -->
-        <div v-if="relatedProducts.length" class="mt-12">
-          <h2 class="text-2xl font-bold mb-6">Related Products</h2>
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div v-if=\"relatedProducts.length\" class=\"mt-12\">
+          <h2 class=\"text-2xl font-bold mb-6\">Related Products</h2>
+          <div class=\"grid grid-cols-1 md:grid-cols-4 gap-6\">
             <ProductCard 
-              v-for="related in relatedProducts" 
-              :key="related.id"
-              :product="related"
+              v-for=\"related in relatedProducts\" 
+              :key=\"related.id\"
+              :product=\"related\"
             />
           </div>
         </div>
@@ -245,7 +245,7 @@ export default defineNuxtConfig({
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang=\"ts\">
 import type { Product } from '~/types'
 
 // Route params
@@ -668,13 +668,13 @@ async function generateProductRoutes() {
 ```vue
 <template>
   <NuxtImg
-    :src="imageSrc"
-    :alt="imageAlt"
-    loading="lazy"
-    :width="800"
-    :height="600"
-    sizes="sm:100vw md:50vw lg:400px"
-    :modifiers="{ quality: 80, format: 'webp' }"
+    :src=\"imageSrc\"
+    :alt=\"imageAlt\"
+    loading=\"lazy\"
+    :width=\"800\"
+    :height=\"600\"
+    sizes=\"sm:100vw md:50vw lg:400px\"
+    :modifiers=\"{ quality: 80, format: 'webp' }\"
   />
 </template>
 ```
@@ -683,8 +683,8 @@ async function generateProductRoutes() {
 ```vue
 <template>
   <div>
-    <LazyHeavyComponent v-if="showComponent" />
-    <button @click="showComponent = true">Load Component</button>
+    <LazyHeavyComponent v-if=\"showComponent\" />
+    <button @click=\"showComponent = true\">Load Component</button>
   </div>
 </template>
 ```
@@ -710,7 +710,7 @@ COPY --from=builder /app/.output .output
 
 EXPOSE 3000
 
-CMD ["node", ".output/server/index.mjs"]
+CMD [\"node\", \".output/server/index.mjs\"]
 ```
 
 ---

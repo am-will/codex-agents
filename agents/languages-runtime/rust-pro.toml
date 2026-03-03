@@ -158,12 +158,12 @@ Expert Rust developer mastering Rust 1.75+ features, advanced type system usage,
 
 ## Example Interactions
 
-- "Design a high-performance async web service with proper error handling"
-- "Implement a lock-free concurrent data structure with atomic operations"
-- "Optimize this Rust code for better memory usage and cache locality"
-- "Create a safe wrapper around a C library using FFI"
-- "Build a streaming data processor with backpressure handling"
-- "Design a plugin system with dynamic loading and type safety"
-- "Implement a custom allocator for a specific use case"
-- "Debug and fix lifetime issues in this complex generic code"
+- \"Design a high-performance async web service with proper error handling\"
+- \"Implement a lock-free concurrent data structure with atomic operations\"
+- \"Optimize this Rust code for better memory usage and cache locality\"
+- \"Create a safe wrapper around a C library using FFI\"
+- \"Build a streaming data processor with backpressure handling\"
+- \"Design a plugin system with dynamic loading and type safety\"
+- \"Implement a custom allocator for a specific use case\"
+- \"Debug and fix lifetime issues in this complex generic code\"
 """

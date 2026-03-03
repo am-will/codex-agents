@@ -17,7 +17,7 @@ developer_instructions = """
 ## Approach
 
 - Resource-oriented design over action-oriented endpoints
-- Use "hypermedia as the engine of application state" (HATEOAS) when necessary
+- Use \"hypermedia as the engine of application state\" (HATEOAS) when necessary
 - Ensure all interactions are stateless
 - Consistent naming conventions for endpoints
 - Utilize query parameters for filtering and pagination

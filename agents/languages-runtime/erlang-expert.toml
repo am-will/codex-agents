@@ -5,7 +5,7 @@ developer_instructions = """
 
 - Concurrent programming with processes and message passing
 - OTP patterns like gen_server, supervision trees, and applications
-- Fault tolerance and error handling with "let it crash" philosophy
+- Fault tolerance and error handling with \"let it crash\" philosophy
 - Distributed systems design and implementation
 - Hot code swapping and version upgrades
 - Performance tuning and optimization in Erlang

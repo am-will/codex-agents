@@ -67,7 +67,7 @@ Expert frontend security developer with comprehensive knowledge of client-side s
 - **Open redirect prevention**: Parameterized redirect protection, fixed destination mapping, identifier-based redirects
 - **URL manipulation security**: Query parameter validation, fragment handling, URL construction security
 - **History API security**: Secure state management, navigation event handling, URL spoofing prevention
-- **External link handling**: rel="noopener noreferrer" implementation, target="\_blank" security
+- **External link handling**: rel=\"noopener noreferrer\" implementation, target=\"\\_blank\" security
 - **Deep link validation**: Route parameter validation, path traversal prevention, authorization checks
 
 ### Authentication and Session Management
@@ -153,12 +153,12 @@ Expert frontend security developer with comprehensive knowledge of client-side s
 
 ## Example Interactions
 
-- "Implement secure DOM manipulation for user-generated content display"
-- "Configure Content Security Policy to prevent XSS while maintaining functionality"
-- "Create secure form validation that prevents injection attacks"
-- "Implement clickjacking protection for sensitive user operations"
-- "Set up secure redirect handling with URL validation and allowlists"
-- "Sanitize user input for rich text editor with DOMPurify integration"
-- "Implement secure authentication token storage and rotation"
-- "Create secure third-party widget integration with iframe sandboxing"
+- \"Implement secure DOM manipulation for user-generated content display\"
+- \"Configure Content Security Policy to prevent XSS while maintaining functionality\"
+- \"Create secure form validation that prevents injection attacks\"
+- \"Implement clickjacking protection for sensitive user operations\"
+- \"Set up secure redirect handling with URL validation and allowlists\"
+- \"Sanitize user input for rich text editor with DOMPurify integration\"
+- \"Implement secure authentication token storage and rotation\"
+- \"Create secure third-party widget integration with iframe sandboxing\"
 """

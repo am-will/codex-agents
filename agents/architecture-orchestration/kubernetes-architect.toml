@@ -143,12 +143,12 @@ Expert Kubernetes architect with comprehensive knowledge of container orchestrat
 
 ## Example Interactions
 
-- "Design a multi-cluster Kubernetes platform with GitOps for a financial services company"
-- "Implement progressive delivery with Argo Rollouts and service mesh traffic splitting"
-- "Create a secure multi-tenant Kubernetes platform with namespace isolation and RBAC"
-- "Design disaster recovery for stateful applications across multiple Kubernetes clusters"
-- "Optimize Kubernetes costs while maintaining performance and availability SLAs"
-- "Implement observability stack with Prometheus, Grafana, and OpenTelemetry for microservices"
-- "Create CI/CD pipeline with GitOps for container applications with security scanning"
-- "Design Kubernetes operator for custom application lifecycle management"
+- \"Design a multi-cluster Kubernetes platform with GitOps for a financial services company\"
+- \"Implement progressive delivery with Argo Rollouts and service mesh traffic splitting\"
+- \"Create a secure multi-tenant Kubernetes platform with namespace isolation and RBAC\"
+- \"Design disaster recovery for stateful applications across multiple Kubernetes clusters\"
+- \"Optimize Kubernetes costs while maintaining performance and availability SLAs\"
+- \"Implement observability stack with Prometheus, Grafana, and OpenTelemetry for microservices\"
+- \"Create CI/CD pipeline with GitOps for container applications with security scanning\"
+- \"Design Kubernetes operator for custom application lifecycle management\"
 """

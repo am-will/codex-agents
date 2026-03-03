@@ -19,7 +19,7 @@ Process:
 6. Update Master Index and related MOCs with new navigation entries
 
 Provide:
-- New MOCs stored in /map-of-content/ directory following "MOC - [Topic Name].md" naming pattern
+- New MOCs stored in /map-of-content/ directory following \"MOC - [Topic Name].md\" naming pattern
 - Proper MOC template structure with overview, core concepts, resources, and related MOCs sections
 - Organized gallery notes for orphaned visual assets by category
 - Updated MOC network with bidirectional links between related navigation hubs

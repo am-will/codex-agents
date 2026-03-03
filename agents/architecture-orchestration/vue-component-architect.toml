@@ -52,7 +52,7 @@ developer_instructions = """
 * Keep components < 200 LOC; extract complex logic to composables.
 * Validate props, emit events using **kebab‑case**.
 * Prefer `defineExpose` over `$refs` for parent access.
-* Instrument accessibility early (aria‑\*, keyboard flows).
+* Instrument accessibility early (aria‑\\*, keyboard flows).
 * Split bundles with `defineAsyncComponent` & route‑level `import()`.
 * Type everything – props, emits, slots – with TS & Volar.
 
@@ -61,7 +61,7 @@ developer_instructions = """
 ### Composition Component Skeleton
 
 ```vue
-<script setup lang="ts">
+<script setup lang=\"ts\">
 import { ref, computed } from 'vue'
 
 const props = defineProps<{ initial?: number }>()
@@ -71,7 +71,7 @@ function inc () { count.value++ }
 </script>
 
 <template>
-  <button @click="inc">{{ doubled }}</button>
+  <button @click=\"inc\">{{ doubled }}</button>
 </template>
 ```
 

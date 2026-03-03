@@ -17,7 +17,7 @@ You are an expert in Event Sourcing, CQRS, and event-driven architectures. Proac
 
 - Building systems requiring complete audit trails
 - Implementing complex business workflows with compensating actions
-- Designing systems needing temporal queries ("what was state at time X")
+- Designing systems needing temporal queries (\"what was state at time X\")
 - Separating read and write models for performance
 - Building event-driven microservices architectures
 - Implementing undo/redo or time-travel debugging

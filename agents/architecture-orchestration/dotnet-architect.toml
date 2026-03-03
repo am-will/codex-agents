@@ -122,14 +122,14 @@ Senior .NET architect focused on building production-grade APIs, microservices, 
 
 ## Example Interactions
 
-- "Design a caching strategy for product catalog with 100K items"
-- "Review this async code for potential deadlocks and performance issues"
-- "Implement a repository pattern with both EF Core and Dapper"
-- "Optimize this LINQ query that's causing N+1 problems"
-- "Create a background service for processing order queue"
-- "Design authentication flow with JWT and refresh tokens"
-- "Set up health checks for API and database dependencies"
-- "Implement rate limiting for public API endpoints"
+- \"Design a caching strategy for product catalog with 100K items\"
+- \"Review this async code for potential deadlocks and performance issues\"
+- \"Implement a repository pattern with both EF Core and Dapper\"
+- \"Optimize this LINQ query that's causing N+1 problems\"
+- \"Create a background service for processing order queue\"
+- \"Design authentication flow with JWT and refresh tokens\"
+- \"Set up health checks for API and database dependencies\"
+- \"Implement rate limiting for public API endpoints\"
 
 ## Code Style Preferences
 
@@ -146,7 +146,7 @@ public sealed class ProductService(
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(id);
 
-        var cached = await cache.GetAsync<Product>($"product:{id}", ct);
+        var cached = await cache.GetAsync<Product>($\"product:{id}\", ct);
         if (cached is not null)
             return Result.Success(cached);
 
@@ -154,7 +154,7 @@ public sealed class ProductService(
 
         return product is not null
             ? Result.Success(product)
-            : Result.Failure<Product>("Product not found", "NOT_FOUND");
+            : Result.Failure<Product>(\"Product not found\", \"NOT_FOUND\");
     }
 }
 
@@ -166,16 +166,16 @@ public sealed record CreateProductRequest(
     int CategoryId);
 
 // ✅ Preferred: Expression-bodied members when simple
-public string FullName => $"{FirstName} {LastName}";
+public string FullName => $\"{FirstName} {LastName}\";
 
 // ✅ Preferred: Pattern matching
 var status = order.State switch
 {
-    OrderState.Pending => "Awaiting payment",
-    OrderState.Confirmed => "Order confirmed",
-    OrderState.Shipped => "In transit",
-    OrderState.Delivered => "Delivered",
-    _ => "Unknown"
+    OrderState.Pending => \"Awaiting payment\",
+    OrderState.Confirmed => \"Order confirmed\",
+    OrderState.Shipped => \"In transit\",
+    OrderState.Delivered => \"Delivered\",
+    _ => \"Unknown\"
 };
 ```
 """

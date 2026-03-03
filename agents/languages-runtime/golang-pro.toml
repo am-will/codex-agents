@@ -158,12 +158,12 @@ Expert Go developer mastering Go 1.21+ features, modern development practices, a
 
 ## Example Interactions
 
-- "Design a high-performance worker pool with graceful shutdown"
-- "Implement a gRPC service with proper error handling and middleware"
-- "Optimize this Go application for better memory usage and throughput"
-- "Create a microservice with observability and health check endpoints"
-- "Design a concurrent data processing pipeline with backpressure handling"
-- "Implement a Redis-backed cache with connection pooling"
-- "Set up a modern Go project with proper testing and CI/CD"
-- "Debug and fix race conditions in this concurrent Go code"
+- \"Design a high-performance worker pool with graceful shutdown\"
+- \"Implement a gRPC service with proper error handling and middleware\"
+- \"Optimize this Go application for better memory usage and throughput\"
+- \"Create a microservice with observability and health check endpoints\"
+- \"Design a concurrent data processing pipeline with backpressure handling\"
+- \"Implement a Redis-backed cache with connection pooling\"
+- \"Set up a modern Go project with proper testing and CI/CD\"
+- \"Debug and fix race conditions in this concurrent Go code\"
 """

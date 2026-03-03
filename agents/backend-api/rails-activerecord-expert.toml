@@ -114,10 +114,10 @@ module QueryOptimizer
   class_methods do
     def with_stats
       select(
-        "#{table_name}.*",
-        "(SELECT COUNT(*) FROM reviews WHERE reviews.product_id = #{table_name}.id) AS reviews_count",
-        "(SELECT AVG(rating) FROM reviews WHERE reviews.product_id = #{table_name}.id) AS avg_rating",
-        "(SELECT COUNT(*) FROM order_items WHERE order_items.product_id = #{table_name}.id) AS sales_count"
+        \"#{table_name}.*\",
+        \"(SELECT COUNT(*) FROM reviews WHERE reviews.product_id = #{table_name}.id) AS reviews_count\",
+        \"(SELECT AVG(rating) FROM reviews WHERE reviews.product_id = #{table_name}.id) AS avg_rating\",
+        \"(SELECT COUNT(*) FROM order_items WHERE order_items.product_id = #{table_name}.id) AS sales_count\"
       )
     end
     
@@ -177,8 +177,8 @@ class Product < ApplicationRecord
     products_table = arel_table
     
     where(
-      products_table[:name].matches("%#{query}%")
-      .or(products_table[:description].matches("%#{query}%"))
+      products_table[:name].matches(\"%#{query}%\")
+      .or(products_table[:description].matches(\"%#{query}%\"))
     )
   }
   
@@ -196,7 +196,7 @@ class Product < ApplicationRecord
       product_ids = products.map(&:id)
       
       where(id: product_ids).update_all(
-        "price = price * #{1 + percentage/100.0}"
+        \"price = price * #{1 + percentage/100.0}\"
       )
     end
   end
@@ -212,9 +212,9 @@ module Analytics
       Order
         .joins(:order_items)
         .where('EXTRACT(YEAR FROM orders.created_at) = ?', year)
-        .group("DATE_TRUNC('month', orders.created_at)")
+        .group(\"DATE_TRUNC('month', orders.created_at)\")
         .select(
-          "DATE_TRUNC('month', orders.created_at) as month",
+          \"DATE_TRUNC('month', orders.created_at) as month\",
           'COUNT(DISTINCT orders.id) as order_count',
           'COUNT(DISTINCT orders.user_id) as unique_customers',
           'SUM(order_items.quantity * order_items.price) as revenue',
@@ -250,12 +250,12 @@ module Analytics
           'COUNT(orders.id) as order_count',
           'SUM(orders.total) as lifetime_value',
           'MAX(orders.created_at) as last_order_date',
-          "CASE
+          \"CASE
             WHEN COUNT(orders.id) >= 10 AND SUM(orders.total) >= 1000 THEN 'VIP'
             WHEN COUNT(orders.id) >= 5 THEN 'Regular'
             WHEN COUNT(orders.id) >= 1 THEN 'New'
             ELSE 'Prospect'
-          END as segment"
+          END as segment\"
         )
     end
     
@@ -338,8 +338,8 @@ class OptimizeProductsTable < ActiveRecord::Migration[7.0]
     SQL
     
     # Create partial indexes
-    add_index :products, :featured, where: "featured = true"
-    add_index :orders, :user_id, where: "status = 'pending'"
+    add_index :products, :featured, where: \"featured = true\"
+    add_index :orders, :user_id, where: \"status = 'pending'\"
   end
   
   def down
@@ -403,8 +403,8 @@ class CreateDatabaseViews < ActiveRecord::Migration[7.0]
   end
   
   def down
-    execute "DROP VIEW IF EXISTS product_statistics"
-    execute "DROP MATERIALIZED VIEW IF EXISTS category_performance"
+    execute \"DROP VIEW IF EXISTS product_statistics\"
+    execute \"DROP MATERIALIZED VIEW IF EXISTS category_performance\"
   end
 end
 ```
@@ -471,14 +471,14 @@ module Searchable
       
       # Use PostgreSQL full-text search
       where(
-        "to_tsvector('english', name || ' ' || COALESCE(description, '')) @@ plainto_tsquery('english', ?)",
+        \"to_tsvector('english', name || ' ' || COALESCE(description, '')) @@ plainto_tsquery('english', ?)\",
         query
       )
     end
     
     def search_with_like(query)
       # Fallback to LIKE for other databases
-      where('name LIKE ? OR description LIKE ?', "%#{query}%", "%#{query}%")
+      where('name LIKE ? OR description LIKE ?', \"%#{query}%\", \"%#{query}%\")
     end
     
     def rebuild_search_index
@@ -501,11 +501,11 @@ module QueryAnalyzer
   
   class_methods do
     def analyze_query
-      connection.execute("EXPLAIN ANALYZE #{to_sql}").values
+      connection.execute(\"EXPLAIN ANALYZE #{to_sql}\").values
     end
     
     def query_plan
-      connection.execute("EXPLAIN #{to_sql}").values
+      connection.execute(\"EXPLAIN #{to_sql}\").values
     end
     
     def with_query_stats
@@ -518,7 +518,7 @@ module QueryAnalyzer
       queries_executed = ActiveRecord::Base.connection.query_cache.size - queries_before
       
       Rails.logger.info(
-        "Query Stats - Duration: #{duration}s, Queries: #{queries_executed}"
+        \"Query Stats - Duration: #{duration}s, Queries: #{queries_executed}\"
       )
       
       result
@@ -538,13 +538,13 @@ class QueryOptimizerService
     yield
     
     # Detect potential N+1 queries
-    grouped = queries.group_by { |q| q.gsub(/\d+/, 'N') }
+    grouped = queries.group_by { |q| q.gsub(/\\d+/, 'N') }
     n_plus_one = grouped.select { |_, queries| queries.size > 10 }
     
     if n_plus_one.any?
-      Rails.logger.warn "Potential N+1 queries detected:"
+      Rails.logger.warn \"Potential N+1 queries detected:\"
       n_plus_one.each do |pattern, queries|
-        Rails.logger.warn "  Pattern: #{pattern} (#{queries.size} times)"
+        Rails.logger.warn \"  Pattern: #{pattern} (#{queries.size} times)\"
       end
     end
   ensure
@@ -558,7 +558,7 @@ class QueryOptimizerService
     model.reflect_on_all_associations(:belongs_to).each do |association|
       column = association.foreign_key
       unless model.connection.indexes(model.table_name).any? { |i| i.columns.include?(column) }
-        suggestions << "add_index :#{model.table_name}, :#{column}"
+        suggestions << \"add_index :#{model.table_name}, :#{column}\"
       end
     end
     
@@ -566,7 +566,7 @@ class QueryOptimizerService
     model.column_names.each do |column|
       if column.match?(/(_id|_type|status|state|slug|email)$/)
         unless model.connection.indexes(model.table_name).any? { |i| i.columns.include?(column) }
-          suggestions << "add_index :#{model.table_name}, :#{column}"
+          suggestions << \"add_index :#{model.table_name}, :#{column}\"
         end
       end
     end

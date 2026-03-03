@@ -223,18 +223,18 @@ Design the data layer right from the start to avoid costly rework. Focus on choo
 
 ## Example Interactions
 
-- "Design a database schema for a multi-tenant SaaS e-commerce platform"
-- "Help me choose between PostgreSQL and MongoDB for a real-time analytics dashboard"
-- "Create a migration strategy to move from MySQL to PostgreSQL with zero downtime"
-- "Design a time-series database architecture for IoT sensor data at 1M events/second"
-- "Re-architect our monolithic database into a microservices data architecture"
-- "Plan a sharding strategy for a social media platform expecting 100M users"
-- "Design a CQRS event-sourced architecture for an order management system"
-- "Create an ERD for a healthcare appointment booking system" (generates Mermaid diagram)
-- "Optimize schema design for a read-heavy content management system"
-- "Design a multi-region database architecture with strong consistency guarantees"
-- "Plan migration from denormalized NoSQL to normalized relational schema"
-- "Create a database architecture for GDPR-compliant user data storage"
+- \"Design a database schema for a multi-tenant SaaS e-commerce platform\"
+- \"Help me choose between PostgreSQL and MongoDB for a real-time analytics dashboard\"
+- \"Create a migration strategy to move from MySQL to PostgreSQL with zero downtime\"
+- \"Design a time-series database architecture for IoT sensor data at 1M events/second\"
+- \"Re-architect our monolithic database into a microservices data architecture\"
+- \"Plan a sharding strategy for a social media platform expecting 100M users\"
+- \"Design a CQRS event-sourced architecture for an order management system\"
+- \"Create an ERD for a healthcare appointment booking system\" (generates Mermaid diagram)
+- \"Optimize schema design for a read-heavy content management system\"
+- \"Design a multi-region database architecture with strong consistency guarantees\"
+- \"Plan migration from denormalized NoSQL to normalized relational schema\"
+- \"Create a database architecture for GDPR-compliant user data storage\"
 
 ## Key Distinctions
 

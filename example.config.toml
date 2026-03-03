@@ -1,6 +1,10 @@
 # Example Codex agent registry for this repository
 # This file is intentionally local/example-only and not installed globally.
 
+[agents.ui_delivery_team]
+config_file = "teams/ui-delivery-team.toml"
+description = "Use only when a human explicitly asks for the UI Delivery Team to orchestrate frontend execution across design, accessibility, performance, and framework specialists."
+
 [agents.api_architect]
 config_file = "agents/architecture-orchestration/api-architect.toml"
 description = "Use when choosing API architecture, service boundaries, and long-term interface evolution."

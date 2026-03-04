@@ -9,6 +9,10 @@ description = "Use only when a human explicitly asks for the UI Delivery Team to
 config_file = "teams/backend-delivery-team.toml"
 description = "Use only when a human explicitly asks for the Backend Delivery Team to orchestrate backend delivery across API, data, security, and framework-specific execution."
 
+[agents.pr_audit_team]
+config_file = "teams/pr-audit-team.toml"
+description = "Use only when a human explicitly asks for the PR Audit Team to run merge-readiness review and conditionally invoke platform specialists based on PR diff and operational risk."
+
 [agents.api_architect]
 config_file = "agents/architecture-orchestration/api-architect.toml"
 description = "Use when choosing API architecture, service boundaries, and long-term interface evolution."

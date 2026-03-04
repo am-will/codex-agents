@@ -381,6 +381,14 @@ description = "Use when implementing numpy functionality with production-grade p
 config_file = "agents/data-ai-ml/prompt-engineer.toml"
 description = "Use when implementing prompt functionality with production-grade patterns and safeguards."
 
+[agents.pydantic_ai_agents_expert]
+config_file = "agents/data-ai-ml/pydantic-ai-agents-expert.toml"
+description = "Use when building or debugging Pydantic AI agents with typed dependencies, tools, validators, and orchestration patterns."
+
+[agents.pydantic_evals_expert]
+config_file = "agents/data-ai-ml/pydantic-evals-expert.toml"
+description = "Use when creating or running Pydantic Evals datasets, evaluator suites, model comparisons, and AI regression checks."
+
 [agents.research_brief_generator]
 config_file = "agents/data-ai-ml/research-brief-generator.toml"
 description = "Use when research brief generator expertise is needed to unblock implementation decisions."

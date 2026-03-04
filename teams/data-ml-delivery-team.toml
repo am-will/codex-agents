@@ -18,6 +18,8 @@ Core roster:
 Conditional specialists:
 - langchain_expert
 - vector_database_engineer
+- pydantic_ai_agents_expert
+- pydantic_evals_expert
 
 Responsibility split:
 - data_engineer: data ingestion, transformation, storage contracts, and data quality.
@@ -27,13 +29,19 @@ Responsibility split:
 - prompt_engineer: prompt/system-instruction quality, evaluation rubric, reliability tuning.
 - langchain_expert: chain/tool orchestration, agentic flow wiring, retrieval pipelines.
 - vector_database_engineer: embeddings stores, index/retrieval performance, vector schema.
+- pydantic_ai_agents_expert: Pydantic AI agent architecture, tools, validators, and orchestration.
+- pydantic_evals_expert: evaluation datasets, evaluators, experiments, and AI regression gates.
 
 Conditional routing logic:
 - If work includes RAG, retrieval orchestration, tool-calling chains, or agent workflows:
   - call langchain_expert
 - If work includes embedding stores, ANN/vector indexing, semantic search tuning:
   - call vector_database_engineer
-- If neither is in scope, do not call those specialists.
+- If work includes Pydantic AI agent implementation/debugging/integration:
+  - call pydantic_ai_agents_expert
+- If work includes eval datasets, model comparison, or AI regression testing:
+  - call pydantic_evals_expert
+- If these concerns are not in scope, do not call those specialists.
 
 Task packet requirements for each delegated task:
 - task_id and task_name

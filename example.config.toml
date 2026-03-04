@@ -17,6 +17,14 @@ description = "Use only when a human explicitly asks for the PR Audit Team to ru
 config_file = "teams/security-assurance-team.toml"
 description = "Use only when a human explicitly asks for the Security Assurance Team to run architecture-to-code security assurance and conditionally invoke identity, API, MCP, and language-specific specialists."
 
+[agents.data_ml_delivery_team]
+config_file = "teams/data-ml-delivery-team.toml"
+description = "Use only when a human explicitly asks for the Data/ML Delivery Team to orchestrate data pipelines, model delivery, and optional RAG/vector specialists when relevant."
+
+[agents.architecture_modernization_team]
+config_file = "teams/architecture-modernization-team.toml"
+description = "Use only when a human explicitly asks for the Architecture Modernization Team to plan and execute staged architecture evolution with optional C4 artifact specialists."
+
 [agents.api_architect]
 config_file = "agents/architecture-orchestration/api-architect.toml"
 description = "Use when choosing API architecture, service boundaries, and long-term interface evolution."

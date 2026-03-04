@@ -13,6 +13,10 @@ description = "Use only when a human explicitly asks for the Backend Delivery Te
 config_file = "teams/pr-audit-team.toml"
 description = "Use only when a human explicitly asks for the PR Audit Team to run merge-readiness review and conditionally invoke platform specialists based on PR diff and operational risk."
 
+[agents.security_assurance_team]
+config_file = "teams/security-assurance-team.toml"
+description = "Use only when a human explicitly asks for the Security Assurance Team to run architecture-to-code security assurance and conditionally invoke identity, API, MCP, and language-specific specialists."
+
 [agents.api_architect]
 config_file = "agents/architecture-orchestration/api-architect.toml"
 description = "Use when choosing API architecture, service boundaries, and long-term interface evolution."
